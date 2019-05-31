@@ -1,0 +1,36 @@
+
+.ztree li span.button.orIcon_ico_close {
+	background: url(../images/or.png) no-repeat scroll 0 0 transparent;
+}
+
+.ztree li span.button.orIcon_ico_open {
+	background: url(../images/or.png) no-repeat scroll 0 0 transparent;
+}
+
+.ztree li span.button.orIcon_ico_docu {
+	background: url(../images/or.png) no-repeat scroll 0 0 transparent;
+}
+
+.ztree li span.button.andIcon_ico_close {
+	background: url(../images/and.png) no-repeat scroll 0 0 transparent;
+}
+
+.ztree li span.button.andIcon_ico_open {
+	background: url(../images/and.png) no-repeat scroll 0 0 transparent;
+}
+
+.ztree li span.button.andIcon_ico_docu {
+	background: url(../images/and.png) no-repeat scroll 0 0 transparent;
+}
+
+.ztree li span.button.otherIcon_ico_close {
+	background: url(../images/other.png) no-repeat scroll 0 0 transparent;
+}
+
+.ztree li span.button.otherIcon_ico_open {
+	background: url(../images/other.png) no-repeat scroll 0 0 transparent;
+}
+
+.ztree li span.button.otherIcon_ico_docu {
+	background: url(../images/other.png) no-repeat scroll 0 0 transparent;
+}

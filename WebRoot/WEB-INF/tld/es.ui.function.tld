@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee web-jsptaglibrary_2_1.xsd">
+ <tlib-version>1.0</tlib-version>
+ <uri>es/ui/function</uri>
+ 
+ <short-name>nocard</short-name>
+ 	<function>      
+         <description>substring string</description><!-- 对这个EL方法的描述   -->      
+         <name>subString</name><!-- 调用EL方法的名称 -->      
+         <function-class>cn.es.ui.ESUIFunction</function-class>      
+         <function-signature>      
+           java.lang.String subString(java.lang.String,int,int)     
+         </function-signature>      
+         <example>${subString(str,int,int)}</example><!-- 例如 -->      
+     </function>  
+     <function>      
+         <description>shortString</description><!-- 对这个EL方法的描述   -->      
+         <name>shortString</name><!-- 调用EL方法的名称 -->      
+         <function-class>cn.es.ui.ESUIFunction</function-class>      
+         <function-signature>      
+           java.lang.String shortString(java.lang.String,int,int)     
+         </function-signature>      
+         <example>${shortString(str,int,int)}</example><!-- 例如 -->      
+     </function>  
+</taglib>
