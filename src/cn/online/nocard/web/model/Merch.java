@@ -56,7 +56,7 @@ public class Merch extends BaseMerch<Merch> {
 	/**
 	 * 根据用户登录ID查询
 	 * 
-	 * @param loginId
+	 * @param MerchId
 	 * @return
 	 */
 	public Merch findById(String MerchId) {
@@ -111,7 +111,7 @@ public class Merch extends BaseMerch<Merch> {
 	/**
 	 * 根据商户编号查询商户信息
 	 * 
-	 * @param code
+	 * @param merchId
 	 * @return
 	 */
 	public Merch searchByMerchId(String merchId) {

@@ -1,0 +1,111 @@
+/*
+Navicat MySQL Data Transfer
+
+Source Server         : local
+Source Server Version : 50643
+Source Host           : 127.0.0.1:3306
+Source Database       : nocard
+
+Target Server Type    : MYSQL
+Target Server Version : 50643
+File Encoding         : 65001
+
+Date: 2019-05-31 14:53:06
+*/
+
+SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for sys_user
+-- ----------------------------
+DROP TABLE IF EXISTS `sys_user`;
+CREATE TABLE `sys_user` (
+  `userid` varchar(32) NOT NULL,
+  `username` varchar(32) DEFAULT NULL,
+  `password` varchar(64) DEFAULT NULL,
+  `authid` varchar(32) DEFAULT NULL,
+  `area` varchar(8) DEFAULT NULL,
+  `department` varchar(64) DEFAULT NULL,
+  `flagtime` char(1) DEFAULT NULL,
+  `startdate` varchar(32) DEFAULT NULL,
+  `enddate` varchar(32) DEFAULT NULL,
+  `modtime` varchar(32) DEFAULT NULL,
+  `addtime` varchar(32) DEFAULT NULL,
+  `flag` char(1) DEFAULT NULL,
+  PRIMARY KEY (`userid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of sys_user
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for t_goods
+-- ----------------------------
+DROP TABLE IF EXISTS `t_goods`;
+CREATE TABLE `t_goods` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `create_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '创建时间',
+  `update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+  `status` int(1) DEFAULT '0' COMMENT '店铺状态（0正常，1禁用，2信用不行）',
+  `merch_id` varchar(128) NOT NULL COMMENT '商户表的id',
+  `goods_name` varchar(256) NOT NULL DEFAULT '' COMMENT '商品名称',
+  `pic_address` varchar(256) NOT NULL DEFAULT '' COMMENT '商品图片地址',
+  `price` double(8,2) NOT NULL DEFAULT '0.00' COMMENT '商品价格',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='商品表';
+
+-- ----------------------------
+-- Records of t_goods
+-- ----------------------------
+INSERT INTO `t_goods` VALUES ('1', '2019-05-30 20:16:10', '2019-05-30 20:16:13', '0', '1', '小米', 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3062065710,2054643169&fm=26&gp=0.jpg', '12.50');
+
+-- ----------------------------
+-- Table structure for t_member
+-- ----------------------------
+DROP TABLE IF EXISTS `t_member`;
+CREATE TABLE `t_member` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `create_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '创建时间',
+  `update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+  `status` int(1) DEFAULT '0' COMMENT '买家状态（0正常，1禁用，2违规）',
+  `member_name` varchar(32) NOT NULL DEFAULT '' COMMENT '买家名',
+  `member_phone` int(11) NOT NULL DEFAULT '0' COMMENT '买家手机号',
+  `member_address` int(11) NOT NULL DEFAULT '0' COMMENT '买家地址',
+  `weixin_openid` varchar(128) NOT NULL COMMENT '买家的微信id',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='买家信息表';
+
+-- ----------------------------
+-- Records of t_member
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for t_merch
+-- ----------------------------
+DROP TABLE IF EXISTS `t_merch`;
+CREATE TABLE `t_merch` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `merch_no` varchar(128) NOT NULL COMMENT '商户编号',
+  `merch_name` varchar(32) NOT NULL DEFAULT '' COMMENT '商户名（店铺名）',
+  `merch_phone` int(11) NOT NULL DEFAULT '0' COMMENT '手机号',
+  `email` varchar(64) DEFAULT '' COMMENT '邮箱',
+  `shop_address` varchar(128) DEFAULT '' COMMENT '店铺详细地址',
+  `province` varchar(32) DEFAULT NULL COMMENT '省份',
+  `city` varchar(32) DEFAULT '' COMMENT '市',
+  `area` varchar(255) DEFAULT '' COMMENT '区域（增城区）',
+  `merch_address` varchar(255) DEFAULT NULL COMMENT '商户家庭住址',
+  `realname` varchar(16) NOT NULL DEFAULT '' COMMENT '真实姓名',
+  `card_no` int(32) DEFAULT '0' COMMENT '身份证号码',
+  `merch_type_no` int(1) DEFAULT '0' COMMENT '商户类型，关联店铺类型表',
+  `create_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '创建时间',
+  `update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+  `status` int(1) DEFAULT '0' COMMENT '商户状态（0正常，1禁用，2信用不行）',
+  `weixin` varchar(255) DEFAULT '' COMMENT '微信关联编号',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='商户和电铺信息表';
+
+-- ----------------------------
+-- Records of t_merch
+-- ----------------------------
+INSERT INTO `t_merch` VALUES ('1', 'test', 'test', '1353364082', '894189960@qq.com', '增城市菜园路11号', '广东', '广州', '增城', '增城市菜园路11号', 'ocean', '440183166', '0', null, null, '0', '');

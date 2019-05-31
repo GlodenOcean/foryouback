@@ -40,11 +40,9 @@ public class GloBalInterceptor implements Interceptor {
 		notFilterActionKey.put("/timeoutPage", 1);
 		notFilterActionKey.put("/loginDialog", 1);
 		notFilterActionKey.put("/getCaptchaCode", 1);
-		// wechat
-		notFilterActionKey.put("/public/createOrderView", 1);
-		notFilterActionKey.put("/public/createOrder", 1);
-		notFilterActionKey.put("/public/payView", 1);
-		notFilterActionKey.put("/interfaceResult/payResultNotify", 1);
+		//小程序接口
+		notFilterActionKey.put("/goods", 1);
+		notFilterActionKey.put("/goods/searchMerchGoodsList", 1);
 
 		contentMap.put("login", "登录");
 		contentMap.put("/user/delete", "删除用户");

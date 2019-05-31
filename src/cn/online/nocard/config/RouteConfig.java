@@ -1,16 +1,7 @@
 package cn.online.nocard.config;
 
+import cn.online.nocard.web.controller.*;
 import com.jfinal.config.Routes;
-
-import cn.online.nocard.web.controller.ExceptionLogController;
-import cn.online.nocard.web.controller.FileController;
-import cn.online.nocard.web.controller.LogController;
-import cn.online.nocard.web.controller.MainController;
-import cn.online.nocard.web.controller.MerchController;
-import cn.online.nocard.web.controller.RoleController;
-import cn.online.nocard.web.controller.SmsClientController;
-import cn.online.nocard.web.controller.SourceController;
-import cn.online.nocard.web.controller.UserController;
 
 /**
  * 配置路由规则,相当于配置action访问地址
@@ -49,6 +40,9 @@ public class RouteConfig extends Routes {
 
 		// 发送短信验证码
 		super.add("/smsMessage", SmsClientController.class, "/");
+
+		// 发送短信验证码
+		super.add("/goods", GoodsController.class, "/");
 
 
 	}

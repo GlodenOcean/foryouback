@@ -1,15 +1,7 @@
 package cn.online.nocard.config;
 
+import cn.online.nocard.web.model.*;
 import com.jfinal.plugin.activerecord.ActiveRecordPlugin;
-
-import cn.online.nocard.web.model.ExceptionLog;
-import cn.online.nocard.web.model.Log;
-import cn.online.nocard.web.model.LogDetail;
-import cn.online.nocard.web.model.Merch;
-import cn.online.nocard.web.model.Order;
-import cn.online.nocard.web.model.Role;
-import cn.online.nocard.web.model.Source;
-import cn.online.nocard.web.model.User;
 
 /**
  * 实体映射
@@ -22,12 +14,6 @@ public class ModelMappingConfig {
 
 	public static void mapping(ActiveRecordPlugin arp) {
 
-//		// 商户表
-//		arp.addMapping("t_merch", "MerchId", Merch.class);
-//
-//		// 当天订单表
-//		arp.addMapping("t_order", "OrderNo", Order.class);
-//
 //		// 用户表
 //		arp.addMapping("sys_user", User.class);
 //
@@ -46,6 +32,14 @@ public class ModelMappingConfig {
 //		// 异常日志
 //		arp.addMapping("sys_exception_log", ExceptionLog.class);
 
+//		// 商户表
+//		arp.addMapping("t_merch", "MerchId", Merch.class);
+//
+//		// 当天订单表
+//		arp.addMapping("t_order", "OrderNo", Order.class);
+
+		// 商品表
+		arp.addMapping("t_goods", "id", Goods.class);
 
 	}
 

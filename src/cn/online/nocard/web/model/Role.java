@@ -39,7 +39,6 @@ public class Role extends BaseRole<Role>{
 	
 	/**
 	 * 查询所有
-	 * @param sc
 	 * @return
 	 */
 	public List<Role> searchAll(){

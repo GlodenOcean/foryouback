@@ -26,6 +26,7 @@ public class GeneratorModel {
 		String baseModelPackageName = "cn.hicard.nocard.web.model.base";
 		// base model 文件保存路径
 		String baseModelOutputDir = PathKit.getWebRootPath() + "/../src/main/model/base";
+
 		// model 所使用的包名 (MappingKit 默认使用的包名)
 		String modelPackageName = "main.model";
 		// model 文件保存路径 (MappingKit 与 DataDictionary 文件默认保存路径)
@@ -36,7 +37,7 @@ public class GeneratorModel {
 		// 设置数据库方言
 		gernerator.setDialect(new MysqlDialect());
 		// 添加不需要生成的表名
-		gernerator.addExcludedTable("t_goods");
+		gernerator.addExcludedTable("adv");
 		// 设置是否在 Model 中生成 dao 对象
 		gernerator.setGenerateDaoInModel(true);
 		// 设置是否生成字典文件
