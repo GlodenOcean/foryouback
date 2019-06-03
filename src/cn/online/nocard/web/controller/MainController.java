@@ -3,11 +3,11 @@ package cn.online.nocard.web.controller;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import javax.servlet.http.HttpSession;
 
+import com.alibaba.fastjson.JSON;
 import com.jfinal.render.CaptchaRender;
 
 import cn.es.common.ESController;
@@ -91,12 +91,14 @@ public class MainController extends ESController {
 	}
 
 	public void login() {
-		if (!CaptchaRender.validate(this, getPara("captchaCode"))) {
-			renderFailJson("验证码不正确.");
-			return;
-		}
+//		if (!CaptchaRender.validate(this, getPara("captchaCode"))) {
+//			renderFailJson("验证码不正确.");
+//			return;
+//		}
 		String s = getPara("loginId");
-		User user = User.dao.searchByloginId(getPara("loginId"));
+		System.out.println("===================="+s );
+		User user = User.dao.searchByloginId(s);
+		System.out.println("==================user=="+ JSON.toJSONString(user) );
 		String loginPassword = ESMD5.codeFor(getPara("loginPassword"));
 		if (user == null || !user.getPassword().equals(loginPassword)) {
 			renderFailJson("用户名/密码错误.");
@@ -105,42 +107,42 @@ public class MainController extends ESController {
 				renderFailJson("此用户没有分配角色,无法登录.");
 			} else {
 
-//				// 判断是否重复登录
-//				boolean isloginexists = false;
-//				boolean ifsessioninvalidate = false;
-//				@SuppressWarnings("unchecked")
-//				Map<String, String> loginUserMap = (Map<String, String>) AppContext.getAppContext()
-//						.get(R.LOGIN_USER_MAP);
-//				if (loginUserMap == null) {
-//					loginUserMap = new HashMap<String, String>();
-//				}
-//				String sessionId = getSession(false).getId();
-//				System.out.println("sessionId" + sessionId);
-//				for (String userlogicId2 : loginUserMap.keySet()) {
-//					if (!userlogicId2.equals(user.getId()) && !loginUserMap.containsValue(sessionId)) { // 不同浏览器不允许相同用户重复登录
-//						continue;
-//					}
-//
-//					if (userlogicId2.equals(user.getId()) && !loginUserMap.containsValue(sessionId)) {
-//						ifsessioninvalidate = true;
-//					}
-//					isloginexists = true;
-//					break;
-//				}
-//				if (isloginexists) {
-//					renderFailJson("用户已登录.");
-//					if (ifsessioninvalidate == true) {
-//						getSession(false).invalidate();
-//					}
-//
-//				} else {
-//
-//					loginUserMap.put(user.getId(), sessionId);
-//					AppContext.getAppContext().put(R.LOGIN_USER_MAP, loginUserMap);
-//					saveAccess(user.getRoleId());
-//					getSession().setAttribute("loginUser", user);
-//					renderSuccessJson();
-//				}
+				// 判断是否重复登录
+				boolean isloginexists = false;
+				boolean ifsessioninvalidate = false;
+				@SuppressWarnings("unchecked")
+				Map<String, String> loginUserMap = (Map<String, String>) AppContext.getAppContext()
+						.get(R.LOGIN_USER_MAP);
+				if (loginUserMap == null) {
+					loginUserMap = new HashMap<String, String>();
+				}
+				String sessionId = getSession(false).getId();
+				System.out.println("sessionId" + sessionId);
+				for (String userlogicId2 : loginUserMap.keySet()) {
+					if (!userlogicId2.equals(user.getId()) && !loginUserMap.containsValue(sessionId)) { // 不同浏览器不允许相同用户重复登录
+						continue;
+					}
+
+					if (userlogicId2.equals(user.getId()) && !loginUserMap.containsValue(sessionId)) {
+						ifsessioninvalidate = true;
+					}
+					isloginexists = true;
+					break;
+				}
+				if (isloginexists) {
+					renderFailJson("用户已登录.");
+					if (ifsessioninvalidate == true) {
+						getSession(false).invalidate();
+					}
+
+				} else {
+
+					loginUserMap.put(user.getId(), sessionId);
+					AppContext.getAppContext().put(R.LOGIN_USER_MAP, loginUserMap);
+					saveAccess(user.getRoleId());
+					getSession().setAttribute("loginUser", user);
+					renderSuccessJson();
+				}
 				saveAccess(user.getRoleId());
 				getSession().setAttribute("loginUser", user);
 				renderSuccessJson();
@@ -151,7 +153,7 @@ public class MainController extends ESController {
 	/**
 	 * 获取用户没有的权限ID,用于隐藏.
 	 * 
-	 * @param userId
+	 * @param roleId
 	 */
 	private void saveAccess(String roleId) {
 		List<Source> all = Source.dao.searchAll();
@@ -190,7 +192,7 @@ public class MainController extends ESController {
 	 * 操作手册
 	 */
 	public void download() {
-		File file = new File(getWebRootPath() + "/upload/file/无卡交易综合管理后台操作指引20170619.doc");
+		File file = new File(getWebRootPath() + "/upload/file/ 交易综合管理后台操作指引20170619.doc");
 		renderFile(file);
 	}
 }

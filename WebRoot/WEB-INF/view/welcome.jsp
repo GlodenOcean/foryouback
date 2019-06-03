@@ -9,7 +9,7 @@
     <div class="actions">
       <div class="list-group">
         <li class="list-group-item list-group-header align-center">
-         欢迎使用无卡交易后台管理系统
+         欢迎使用交易后台管理系统
         </li>
         <a href="download" class="list-group-item">
           使用手册

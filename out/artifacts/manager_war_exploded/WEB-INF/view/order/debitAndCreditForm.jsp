@@ -155,7 +155,7 @@ var option = {
     },
     series: [
         {
-        	name:'无卡统计',
+        	name:' 统计',
             type:'pie',
             radius: ['50%', '80%'],
             avoidLabelOverlap: false,
@@ -208,7 +208,7 @@ var channel = {
 	    },
 	    series: [
 	        {
-	        	name:'无卡统计',
+	        	name:' 统计',
 	            type:'pie',
 	            radius: ['50%', '80%'],
 	            avoidLabelOverlap: false,

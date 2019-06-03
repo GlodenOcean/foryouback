@@ -15,6 +15,97 @@ Date: 2019-05-31 14:53:06
 
 SET FOREIGN_KEY_CHECKS=0;
 
+
+-- ----------------------------
+-- Table structure for `sys_user`
+-- ----------------------------
+DROP TABLE IF EXISTS `sys_user`;
+CREATE TABLE `sys_user` (
+  `id` varchar(32) NOT NULL COMMENT '主键',
+  `loginId` varchar(20) NOT NULL COMMENT '登录ID',
+  `userName` varchar(20) DEFAULT NULL COMMENT '姓名',
+  `password` varchar(50) DEFAULT NULL COMMENT '密码',
+  `area` varchar(5) DEFAULT NULL COMMENT '地区',
+  `department` varchar(60) DEFAULT NULL COMMENT '部门',
+  `useType` char(1) NOT NULL COMMENT '0=长期1=临时',
+  `startDate` char(10) DEFAULT NULL COMMENT '有效期开始',
+  `endDate` char(10) DEFAULT NULL COMMENT '有效期截止',
+  `operationTime` char(19) DEFAULT NULL COMMENT '操作时间',
+  `updateTime` char(19) DEFAULT NULL COMMENT '修改时间',
+  `status` char(1) NOT NULL COMMENT '0=禁用1=启用',
+  `roleId` char(32) DEFAULT NULL COMMENT '角色ID',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `userid` (`loginId`)
+) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `sys_source`;
+CREATE TABLE `sys_source` (
+  `id` char(32) NOT NULL COMMENT '主键',
+  `controlId` varchar(100) DEFAULT NULL COMMENT '资源ID',
+  `url` varchar(100) DEFAULT NULL COMMENT '资源URL',
+  `name` varchar(100) DEFAULT NULL COMMENT '资源名称',
+  `parentId` char(32) DEFAULT NULL COMMENT '资源的父资源主键',
+  `sort` int(11) DEFAULT NULL COMMENT '排序',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `sys_log_detail`;
+CREATE TABLE `sys_log_detail` (
+  `detailId` char(32) DEFAULT NULL COMMENT '关联日志详情id',
+  `id` char(32) NOT NULL COMMENT '主键',
+  `operateTable` varchar(64) DEFAULT NULL COMMENT '操作对应的表',
+  `column` varchar(32) DEFAULT NULL COMMENT '修改字段',
+  `oldValue` varchar(256) DEFAULT NULL COMMENT '旧值',
+  `newValue` varchar(256) DEFAULT NULL COMMENT '新值',
+  `AddTime` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '添加时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `sys_role`;
+CREATE TABLE `sys_role` (
+  `id` char(32) NOT NULL COMMENT '主键',
+  `roleName` varchar(32) DEFAULT NULL COMMENT '角色名称',
+  `updateDateTime` char(19) DEFAULT NULL COMMENT '更新日期时间',
+  `description` varchar(128) DEFAULT NULL COMMENT '角色描述',
+  `source` varchar(1000) DEFAULT NULL COMMENT '资源',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `sys_log`;
+CREATE TABLE `sys_log` (
+  `id` char(32) NOT NULL COMMENT '主键',
+  `loginId` char(32) DEFAULT NULL COMMENT '操作员(用户)',
+  `type` varchar(32) DEFAULT NULL COMMENT '操作类型',
+  `remark` varchar(512) DEFAULT NULL COMMENT '操作备注',
+  `date` char(10) DEFAULT NULL COMMENT '操作日期',
+  `time` char(8) DEFAULT NULL COMMENT '操作时间',
+  `ip` varchar(20) DEFAULT NULL COMMENT 'IP地址',
+  `userName` varchar(32) DEFAULT NULL,
+  `operationObjId` varchar(32) DEFAULT NULL COMMENT '操作对象编号',
+  `operationObjName` varchar(128) DEFAULT NULL COMMENT '操作对象名称',
+  `operationObj` varchar(32) DEFAULT NULL COMMENT '操作对象',
+  `detailId` varchar(32) DEFAULT NULL COMMENT '关联日志详情',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `sys_exception_log`;
+CREATE TABLE `sys_exception_log` (
+  `id` char(32) NOT NULL,
+  `actionKey` varchar(100) DEFAULT NULL COMMENT '请求路径',
+  `throwDate` char(10) DEFAULT NULL COMMENT '异常抛出日期',
+  `throwTime` char(8) DEFAULT NULL COMMENT '异常抛出时间',
+  `throwMessage` text COMMENT '抛出异常的控制器',
+  `userLoginId` varchar(20) DEFAULT NULL COMMENT '用户登录账户名',
+  `userId` int(11) DEFAULT NULL COMMENT '用户ID',
+  `from` smallint(1) DEFAULT NULL COMMENT '异常来源0=网页操作,1=接口操作',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+
+INSERT INTO `sys_user` VALUES ('505460a6a3b9462ba8bea20adeab3bb8', 'ocean', '管理员', '39c3f82b0f479fa61bf46f78e8b4df35', null, '技术部门', '0', '2017-04-26', '2095-12-28', null, '2017-11-18 19:24:29', '1', '76c5922be3324230aba944b22b2ce454');
+
+
+=======================================================================================================================================================================================
+
 -- ----------------------------
 -- Table structure for sys_user
 -- ----------------------------

@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta name=”renderer” content=”webkit” /> 
-<title>无卡交易系统管理后台</title>
+<title>交易系统管理后台</title>
 <link rel="icon" href="build/custom/images/logo_o.png" type="image/x-icon"/>
 <link href="build/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet" >
 <link href="build/custom/css/login.css" rel="stylesheet"type="text/css" />
@@ -28,7 +28,7 @@
 
 	<div class="content">
 		<form id="login-form" class="login-form" action="login" method="post">
-		<h3 class="form-title">无卡交易系统后台登录</h3>
+		<h3 class="form-title">交易系统后台登录</h3>
 		<div id="alert-div" class="alert alert-danger" style="display: none;">
 			<span id="alert-div-message"></span>
 		</div>

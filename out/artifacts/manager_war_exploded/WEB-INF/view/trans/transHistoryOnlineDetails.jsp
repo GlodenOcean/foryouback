@@ -61,7 +61,7 @@
 						
 						<div class="row">
 							<div class="col-md-6">
-									<label class="control-label col-md-3">无卡订单号:</label>
+									<label class="control-label col-md-3"> 订单号:</label>
 									<label class="control-text col-md-4">${trans.OrderNo }</label>
 							</div>
 							<div class="col-md-6">
@@ -94,7 +94,7 @@
 						
 						<div class="row">
 							<div class="col-md-6">
-									<label class="control-label col-md-3">原无卡订单号:</label>
+									<label class="control-label col-md-3">原 订单号:</label>
 									<label class="control-text col-md-4">${trans.OriOrderNo }</label>
 							</div>
 							<div class="col-md-6">

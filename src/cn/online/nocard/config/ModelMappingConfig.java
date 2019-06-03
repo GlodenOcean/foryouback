@@ -14,28 +14,28 @@ public class ModelMappingConfig {
 
 	public static void mapping(ActiveRecordPlugin arp) {
 
-//		// 用户表
-//		arp.addMapping("sys_user", User.class);
-//
-//		// 角色表
-//		arp.addMapping("sys_role", Role.class);
-//
-//		// 操作日志表
-//		arp.addMapping("sys_log", Log.class);
-//
-//		// 操作日志表
-//		arp.addMapping("sys_log_detail", LogDetail.class);
-//
-//		// 系统资源表
-//		arp.addMapping("sys_source", Source.class);
-//
-//		// 异常日志
-//		arp.addMapping("sys_exception_log", ExceptionLog.class);
+		// 用户表
+		arp.addMapping("sys_user", User.class);
 
-//		// 商户表
+		// 角色表
+		arp.addMapping("sys_role", Role.class);
+
+		// 操作日志表
+		arp.addMapping("sys_log", Log.class);
+
+		// 操作日志表
+		arp.addMapping("sys_log_detail", LogDetail.class);
+
+		// 系统资源表
+		arp.addMapping("sys_source", Source.class);
+
+		// 异常日志
+		arp.addMapping("sys_exception_log", ExceptionLog.class);
+
+		// 商户表
 //		arp.addMapping("t_merch", "MerchId", Merch.class);
-//
-//		// 当天订单表
+
+		// 当天订单表
 //		arp.addMapping("t_order", "OrderNo", Order.class);
 
 		// 商品表

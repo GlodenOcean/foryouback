@@ -256,7 +256,7 @@
 
 				<div class="row">
 					<div class="form-group">
-						<label class="control-label col-md-2">无卡快捷支付权限<span
+						<label class="control-label col-md-2"> 快捷支付权限<span
 							class="red">*</span></label>
 						<div class="col-md-3">
 							<label class="radio-inline"> <input type="radio"
@@ -267,7 +267,7 @@
 								<c:if test="${permission.noCard016Perm eq '0' }">checked="checked"</c:if>>禁用
 							</label>
 						</div>
-						<label class="control-label col-md-2">无卡快捷消费(SDK)支付<span
+						<label class="control-label col-md-2"> 快捷消费(SDK)支付<span
 							class="red">*</span></label>
 						<div class="col-md-3">
 							<label class="radio-inline"> <input type="radio"

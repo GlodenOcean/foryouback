@@ -6,7 +6,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="renderer" content="webkit" />
-<title>无卡交易系统管理后台</title>
+<title>交易系统管理后台</title>
 <link rel="icon" href="build/custom/images/logo_o.png"
 	type="image/x-icon" />
 <%@ include file="/include/style.jsp"%>

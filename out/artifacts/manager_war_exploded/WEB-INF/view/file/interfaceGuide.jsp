@@ -8,15 +8,15 @@
 						<b>普通接口接入指南</b>
 					</h3></font>
 			</div>
-			<div style="margin-top: 30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;普通接口包括订单生成、订单查询、扫码支付（被扫）、银行卡要素认证、无卡消费和退货接口，微信公众号支付和无卡快捷支付除外。</div>
+			<div style="margin-top: 30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;普通接口包括订单生成、订单查询、扫码支付（被扫）、银行卡要素认证、 消费和退货接口，微信公众号支付和 快捷支付除外。</div>
 			<div style="margin-top: 6px;">
 				以 <b>订单生成</b> 为例的接入步骤：
 			</div>
-			<div style="margin-top: 6px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、请点击文档下载里面的接口文档下载，下载前置无卡支付接入指南。（如下图）</div>
+			<div style="margin-top: 6px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、请点击文档下载里面的接口文档下载，下载前置 支付接入指南。（如下图）</div>
 			<div style="margin-top: 6px;">
 				<img src="build/custom/images/guide/interface1.jpg"></img>
 			</div>
-			<div style="margin-top: 6px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、请仔细阅读前置无卡支付接入指南。在订单生成接口文档里请注意“可空”和“签名顺序”这两列。可空表示请求到服务器是需要带上这些参数，但是参数的值可以为空。签名顺序表示这些数据都参与生成签名，且生成签名时参与签名的数据的顺序必须按照文档提供的顺序来，否则会提示“验签失败”。</div>
+			<div style="margin-top: 6px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、请仔细阅读前置 支付接入指南。在订单生成接口文档里请注意“可空”和“签名顺序”这两列。可空表示请求到服务器是需要带上这些参数，但是参数的值可以为空。签名顺序表示这些数据都参与生成签名，且生成签名时参与签名的数据的顺序必须按照文档提供的顺序来，否则会提示“验签失败”。</div>
 			<div style="margin-top: 6px;">
 				<img src="build/custom/images/guide/interface2.jpg"></img>
 			</div>

@@ -339,7 +339,7 @@
 								<option value="0" ${merch.IsT1YECZ ne '1' ? 'selected' : '' }>否</option>
 							</select>
 						</div>
-						<label class="control-label col-md-2">无卡交易入账名称<span
+						<label class="control-label col-md-2"> 交易入账名称<span
 							class="red">*</span></label>
 						<div class="col-md-3">
 							<input name="merch.noCardInCommName" id="noCardInCommName"
@@ -585,7 +585,7 @@
 							<select name="merch.NoCardFee" class="form-control">
 								<option value="">无指定</option>
 								<c:forEach items="${rateList }" var="rate">
-									<%-- <c:if test="${rate.PayKind eq '无卡快捷' }"> --%>
+									<%-- <c:if test="${rate.PayKind eq ' 快捷' }"> --%>
 										<option value="${rate.RateName }"
 											${merch.NoCardFee eq rate.RateName ? 'selected' : '' }>${rate.RateName}</option>
 									<%-- </c:if> --%>
@@ -786,7 +786,7 @@
 			var select = $("#noCardAssPayCh").find("option:selected").val();
 			var newYMF = $("#newYMF").val();
 			if(select == "爱农支付平台" && newYMF == ""){
-				alert("请完善无卡(网页)指定渠道选项");
+				alert("请完善 (网页)指定渠道选项");
 				return 0;
 			}
 			$("#merchForm").submit();

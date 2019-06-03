@@ -59,16 +59,16 @@
 														<option value="消费冲正" ${TransName == '消费冲正' ? 'selected' : ''  }>消费冲正</option>
 														<option value="余额查询" ${TransName == '余额查询' ? 'selected' : ''  }>余额查询</option>
 														<option value="POS状态上送" ${TransName == 'POS状态上送' ? 'selected' : ''  }>POS状态上送</option>
-														<option value="微信无卡订单生成" ${TransName == '微信无卡订单生成' ? 'selected' : ''  }>微信无卡订单生成</option>
-														<option value="支付宝无卡订单生成" ${TransName == '支付宝无卡订单生成' ? 'selected' : ''  }>支付宝无卡订单生成</option>
-														<option value="支付宝无卡扫码支付" ${TransName == '支付宝无卡扫码支付' ? 'selected' : ''  }>支付宝无卡扫码支付</option>
-														<option value="微信无卡扫码支付" ${TransName == '微信无卡扫码支付' ? 'selected' : ''  }>微信无卡扫码支付</option>
-														<option value="微信无卡订单查询" ${TransName == '微信无卡订单查询' ? 'selected' : ''  }>微信无卡订单查询</option>
-														<option value="支付宝无卡订单查询" ${TransName == '支付宝无卡订单查询' ? 'selected' : ''  }>支付宝无卡订单查询</option>
+														<option value="微信 订单生成" ${TransName == '微信 订单生成' ? 'selected' : ''  }>微信 订单生成</option>
+														<option value="支付宝 订单生成" ${TransName == '支付宝 订单生成' ? 'selected' : ''  }>支付宝 订单生成</option>
+														<option value="支付宝 扫码支付" ${TransName == '支付宝 扫码支付' ? 'selected' : ''  }>支付宝 扫码支付</option>
+														<option value="微信 扫码支付" ${TransName == '微信 扫码支付' ? 'selected' : ''  }>微信 扫码支付</option>
+														<option value="微信 订单查询" ${TransName == '微信 订单查询' ? 'selected' : ''  }>微信 订单查询</option>
+														<option value="支付宝 订单查询" ${TransName == '支付宝 订单查询' ? 'selected' : ''  }>支付宝 订单查询</option>
 														<option value="消费撤销冲正" ${TransName == '消费撤销冲正' ? 'selected' : ''  }>消费撤销冲正</option>
 														<option value="联机下载终端主密钥" ${TransName == '联机下载终端主密钥' ? 'selected' : ''  }>联机下载终端主密钥</option>
 														<option value="T0交易通知" ${TransName == 'T0交易通知' ? 'selected' : ''  }>T0交易通知</option>
-														<option value="前端无卡回调通知" ${TransName == '前端无卡回调通知' ? 'selected' : ''  }>前端无卡回调通知</option>
+														<option value="前端 回调通知" ${TransName == '前端 回调通知' ? 'selected' : ''  }>前端 回调通知</option>
 													</select>
 												</td>
 											</tr>
