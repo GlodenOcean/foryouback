@@ -33,13 +33,13 @@ public class ModelMappingConfig {
 		arp.addMapping("sys_exception_log", ExceptionLog.class);
 
 		// 商户表
-//		arp.addMapping("t_merch", "MerchId", Merch.class);
+//		arp.addMapping("shop_merch", "MerchId", Merch.class);
 
 		// 当天订单表
-//		arp.addMapping("t_order", "OrderNo", Order.class);
+//		arp.addMapping("shop_order", "OrderNo", Order.class);
 
 		// 商品表
-		arp.addMapping("t_goods", "id", Goods.class);
+		arp.addMapping("shop_goods", "id", Goods.class);
 
 	}
 

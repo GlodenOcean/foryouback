@@ -2,13 +2,13 @@ package cn.online.nocard.web.model;
 
 import java.util.List;
 
+import cn.online.nocard.web.model.base.BaseMerch;
 import com.jfinal.plugin.activerecord.Db;
 import com.jfinal.plugin.activerecord.Page;
 
 import cn.es.common.ESSearchCondition;
 import cn.es.utils.ESSQLHelper;
 import cn.online.nocard.util.HCSqlHelper;
-import cn.online.nocard.web.model.base.BaseMerch;
 
 /**
  * @Description: 商户查询dao
@@ -30,7 +30,7 @@ public class Merch extends BaseMerch<Merch> {
 		int pageNumber = sc.page.getIndex();
 		int pageSize = sc.page.getSize();
 
-		ESSQLHelper sql = new ESSQLHelper(" from t_merch WHERE 1 = 1");
+		ESSQLHelper sql = new ESSQLHelper(" from shop_merch WHERE 1 = 1");
 		sql.equals("MerchId", sc.getString("MerchId"));
 		sql.equals("MerchName", sc.getString("MerchName"));
 		sql.equals("UpMerchId", sc.getString("UpMerchId"));
@@ -45,11 +45,10 @@ public class Merch extends BaseMerch<Merch> {
 	/**
 	 * 查询所有商户
 	 * 
-	 * @param sc
 	 * @return
 	 */
 	public List<Merch> searchAll() {
-		String sql = "SELECT * FROM t_merch";
+		String sql = "SELECT * FROM shop_merch";
 		return super.find(sql);
 	}
 
@@ -60,17 +59,17 @@ public class Merch extends BaseMerch<Merch> {
 	 * @return
 	 */
 	public Merch findById(String MerchId) {
-		return super.findFirst("select * from t_merch where MerchId = ?", MerchId);
+		return super.findFirst("select * from shop_merch where MerchId = ?", MerchId);
 	}
 
 	public boolean batchDelete(Object... ids) {
-		ESSQLHelper sql = new ESSQLHelper("DELETE FROM t_merch WHERE 1 = 1");
+		ESSQLHelper sql = new ESSQLHelper("DELETE FROM shop_merch WHERE 1 = 1");
 		sql.in("MerchId", ids);
 		return Db.update(sql.toString(), sql.getParams()) > 0;
 	}
 
 	public boolean batchSetNullRoleIdByRoleId(Object... merchIds) {
-		ESSQLHelper sql = new ESSQLHelper("UPDATE t_merch set roleId = null WHERE 1 = 1");
+		ESSQLHelper sql = new ESSQLHelper("UPDATE shop_merch set roleId = null WHERE 1 = 1");
 		sql.in("MerchId", merchIds);
 		return Db.update(sql.toString(), sql.getParams()) > 0;
 	}
@@ -81,7 +80,7 @@ public class Merch extends BaseMerch<Merch> {
 	 * @return
 	 */
 	public Long countUseMerchCode() {
-		return Db.queryLong("SELECT COUNT(*) FROM t_merch WHERE useStatus = ?", "0");
+		return Db.queryLong("SELECT COUNT(*) FROM shop_merch WHERE useStatus = ?", "0");
 	}
 
 	/**
@@ -98,14 +97,14 @@ public class Merch extends BaseMerch<Merch> {
 	 */
 	public List<Merch> searchForCrePic(String useStatus, int len, int nums, String orgId) {
 		return super.find(
-				"SELECT * FROM t_merch where isExport = ? AND LENGTH(serialNo) = ? AND InstNo = ? AND UpdateTime > ? ORDER BY UpdateTime DESC LIMIT ?",
+				"SELECT * FROM shop_merch where isExport = ? AND LENGTH(serialNo) = ? AND InstNo = ? AND UpdateTime > ? ORDER BY UpdateTime DESC LIMIT ?",
 				useStatus, len, orgId, "2016-09-20 20:30:00", nums);
 	}
 
 	// 查找最大的serialNo并且长度为6位的数字
 	public String searchMaxSerialNo() {
 		return Db.queryStr(
-				"SELECT serialNo FROM t_merch WHERE serialNo  REGEXP '^[0-9]+$' AND LENGTH(serialNo) = 6 ORDER  BY serialNo DESC LIMIT 1;");
+				"SELECT serialNo FROM shop_merch WHERE serialNo  REGEXP '^[0-9]+$' AND LENGTH(serialNo) = 6 ORDER  BY serialNo DESC LIMIT 1;");
 	}
 
 	/**
@@ -115,7 +114,7 @@ public class Merch extends BaseMerch<Merch> {
 	 * @return
 	 */
 	public Merch searchByMerchId(String merchId) {
-		return super.findFirst("SELECT * FROM t_merch WHERE MerchId = ?", merchId);
+		return super.findFirst("SELECT * FROM shop_merch WHERE MerchId = ?", merchId);
 	}
 
 	/**
@@ -125,7 +124,7 @@ public class Merch extends BaseMerch<Merch> {
 	 * @return
 	 */
 	public Merch searchBySerialNo(String serialNo) {
-		return super.findFirst("SELECT * FROM t_merch WHERE serialNo = ?", serialNo);
+		return super.findFirst("SELECT * FROM shop_merch WHERE serialNo = ?", serialNo);
 	}
 
 	/**
@@ -136,7 +135,7 @@ public class Merch extends BaseMerch<Merch> {
 	 * @return List<Merch> 商户列表 一个微信号可以对应多个商户信息
 	 */
 	public List<Merch> searchByOpenId(String openId) {
-		HCSqlHelper sql = new HCSqlHelper("SELECT * FROM t_merch WHERE 1 = 1");
+		HCSqlHelper sql = new HCSqlHelper("SELECT * FROM shop_merch WHERE 1 = 1");
 		sql.like("openId", openId);
 		return super.find(sql.toString(), sql.getParams());
 	}
@@ -149,7 +148,7 @@ public class Merch extends BaseMerch<Merch> {
 	 * @return 一个商户信息
 	 */
 	public Merch searchByCellPhone(String phone) {
-		return super.findFirst("SELECT * FROM t_merch WHERE MerchTel = ? LIMIT 1", phone);
+		return super.findFirst("SELECT * FROM shop_merch WHERE MerchTel = ? LIMIT 1", phone);
 	}
 	
 	/**
@@ -158,11 +157,11 @@ public class Merch extends BaseMerch<Merch> {
 	 * @return 商户list
 	 */
 	public List<Merch> searchByPhone(String phone){
-		return super.find("SELECT * FROM t_merch WHERE MerchTel = ?", phone);
+		return super.find("SELECT * FROM shop_merch WHERE MerchTel = ?", phone);
 	}
 
 	public List<Merch> searchByCodes(Object[] codes) {
-		HCSqlHelper sql = new HCSqlHelper("SELECT * FROM t_merch WHERE 1 = 1");
+		HCSqlHelper sql = new HCSqlHelper("SELECT * FROM shop_merch WHERE 1 = 1");
 		sql.in("MerchId", codes);
 		return super.find(sql.toString(), sql.getParams());
 	}

@@ -24,7 +24,7 @@ public class Goods extends BaseGoods<Goods> {
 		int pageNumber = sc.page.getIndex();
 		int pageSize = sc.page.getSize();
 
-		ESSQLHelper sql = new ESSQLHelper(" from  t_goods  WHERE 1 = 1");
+		ESSQLHelper sql = new ESSQLHelper(" from  shop_goods  WHERE 1 = 1");
 		sql.equals("MerchId", sc.getString("MerchId"));
 		sql.orderBy(sc,"update_time", "desc");
 		return super.find("select *"+sql.toString(),sql.getParams());
