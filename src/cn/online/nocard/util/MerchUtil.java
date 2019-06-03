@@ -22,23 +22,23 @@ public class MerchUtil{
 			
 			Merch merchant = Merch.dao.findFirst("SELECT * FROM bd_merch where useStatus = ? AND merchId is not NULL  AND isExport = ?  AND InstNo = 'b5c6908d52a549bf82690b13141e9b45' ORDER BY UpdateTime DESC limit ? ", "0","0",1);
 			if(!HCBoolean.isEmpty(merchant)){
-				log.info("merchant:" + merchant.getUUID());
-				merchId = merchant.getMerchId();
-				boolean same = false;
-				for(Merch merch : merchList){
-					if(merch.getMerchId().equals(merchId)){
-						same = true;
-					}
-				}
-				if(!same){
-					merchant.setUseStatus("2");
-					merchant.setIsExport("1");
-					merchant.setUpdateTime(new Date());
-					log.info("从预生成的商户号中取一个商户号:" + merchant.getMerchId());
-					merchant.update();
-				}else{
-					getMerchCode("0",0,null);
-				}
+//				log.info("merchant:" + merchant.getUUID());
+//				merchId = merchant.getMerchId();
+//				boolean same = false;
+//				for(Merch merch : merchList){
+//					if(merch.getMerchId().equals(merchId)){
+//						same = true;
+//					}
+//				}
+//				if(!same){
+//					merchant.setUseStatus("2");
+//					merchant.setIsExport("1");
+//					merchant.setUpdateTime(new Date());
+//					log.info("从预生成的商户号中取一个商户号:" + merchant.getMerchId());
+//					merchant.update();
+//				}else{
+//					getMerchCode("0",0,null);
+//				}
 			
 			}
 		

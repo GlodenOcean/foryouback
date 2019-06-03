@@ -8,10 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a824bc84-7766-49bd-997b-e0f35542fa88" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/config/ModelMappingConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/nocard/config/ModelMappingConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/model/Goods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/nocard/web/model/Goods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/model/Merch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/nocard/web/model/Merch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/model/base/BaseMerch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/nocard/web/model/base/BaseMerch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/interceptors/GloBalInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/nocard/interceptors/GloBalInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/util/MerchUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/nocard/util/MerchUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/controller/MerchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/nocard/web/controller/MerchController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/WebRoot/WEB-INF/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,11 +21,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/config/ModelMappingConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="29" column="51" lean-forward="true" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+            <state relative-caret-position="122">
+              <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/util/MerchUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="40" column="17" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="40" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -48,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/model/Goods.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="99">
-              <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+              <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,10 +65,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/view/index.jsp">
+        <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/interceptors/GloBalInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2022">
-              <caret line="24" column="15" lean-forward="true" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+            <state relative-caret-position="404">
+              <caret line="410" column="17" lean-forward="true" selection-start-line="410" selection-start-column="17" selection-end-line="410" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -69,7 +77,7 @@
         <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/view/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="556">
-              <caret line="47" column="36" lean-forward="true" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
+              <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -99,11 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/model/Merch.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/controller/MerchController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="247">
+              <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
             </state>
           </provider>
         </entry>
@@ -113,15 +121,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
               <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/config/RouteConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="17" column="56" lean-forward="true" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -161,14 +160,12 @@
       <list>
         <option value="$PROJECT_DIR$/.project" />
         <option value="$PROJECT_DIR$/src/cn/online/nocard/web/controller/FileController.java" />
-        <option value="$PROJECT_DIR$/src/cn/online/nocard/web/controller/MerchController.java" />
         <option value="$PROJECT_DIR$/src/db.properties" />
         <option value="$PROJECT_DIR$/src/main/GeneratorModel.java" />
         <option value="$PROJECT_DIR$/src/cn/online/nocard/web/model/base/BaseGoods.java" />
         <option value="$PROJECT_DIR$/src/cn/online/nocard/web/model/Role.java" />
         <option value="$PROJECT_DIR$/src/cn/online/nocard/config/RouteConfig.java" />
         <option value="$PROJECT_DIR$/src/cn/online/nocard/web/controller/GoodsController.java" />
-        <option value="$PROJECT_DIR$/src/cn/online/nocard/interceptors/GloBalInterceptor.java" />
         <option value="$PROJECT_DIR$/文档/数据库设计" />
         <option value="$PROJECT_DIR$/WebRoot/WEB-INF/view/trans/reject/transRejectForm.jsp" />
         <option value="$PROJECT_DIR$/WebRoot/WEB-INF/view/welcome.jsp" />
@@ -182,6 +179,9 @@
         <option value="$PROJECT_DIR$/src/cn/online/nocard/web/model/Merch.java" />
         <option value="$PROJECT_DIR$/src/cn/online/nocard/web/model/Goods.java" />
         <option value="$PROJECT_DIR$/src/cn/online/nocard/config/ModelMappingConfig.java" />
+        <option value="$PROJECT_DIR$/src/cn/online/nocard/interceptors/GloBalInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/cn/online/nocard/util/MerchUtil.java" />
+        <option value="$PROJECT_DIR$/src/cn/online/nocard/web/controller/MerchController.java" />
       </list>
     </option>
   </component>
@@ -313,7 +313,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559561058964" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559561185004" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -516,7 +516,7 @@
       <workItem from="1559219589812" duration="175000" />
       <workItem from="1559268025246" duration="754000" />
       <workItem from="1559268787121" duration="10598000" />
-      <workItem from="1559559014473" duration="2042000" />
+      <workItem from="1559559014473" duration="2168000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1559269345958</created>
@@ -546,11 +546,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559560860557</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="把t改成shop">
+      <created>1559561076324</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1559561076324</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23940000" />
+    <option name="totallyTimeSpent" value="24066000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -565,7 +572,7 @@
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.13434453" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.13434453" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -601,10 +608,10 @@
     <MESSAGE value="删除class文件" />
     <MESSAGE value="添加sql" />
     <MESSAGE value="添加系统信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加系统信息" />
+    <MESSAGE value="把t改成shop" />
+    <option name="LAST_COMMIT_MESSAGE" value="把t改成shop" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/view/interface/frozenForm.jsp" />
     <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/view/fixCode/fixCodeForm.jsp" />
     <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/view/qrcode/web/generate.jsp" />
     <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/view/account/detail/accountDetailForm.jsp">
@@ -788,24 +795,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/interceptors/GloBalInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/interceptors/SessionListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/controller/MerchController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="42" column="33" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -894,7 +887,7 @@
     <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/view/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2022">
-          <caret line="24" column="15" lean-forward="true" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -915,7 +908,7 @@
     <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/view/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="556">
-          <caret line="47" column="36" lean-forward="true" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
+          <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -954,7 +947,7 @@
     <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/model/Goods.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
-          <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -963,8 +956,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/config/ModelMappingConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="29" column="51" lean-forward="true" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+        <state relative-caret-position="122">
+          <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/interceptors/GloBalInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="410" column="17" lean-forward="true" selection-start-line="410" selection-start-column="17" selection-end-line="410" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/util/MerchUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="40" column="17" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="40" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/controller/MerchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
         </state>
       </provider>
     </entry>

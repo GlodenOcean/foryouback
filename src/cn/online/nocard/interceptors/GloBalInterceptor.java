@@ -270,63 +270,63 @@ public class GloBalInterceptor implements Interceptor {
 		if (actionKey.contains("update")) {
 			if (controller.getClass().getSimpleName().equals("MerchController")) { // 商户
 				Merch nMerch = controller.getModel(Merch.class, "merch");
-				Merch oMerch = Merch.dao.findById(nMerch.getMerchId());
+//				Merch oMerch = Merch.dao.findById(nMerch.getMerchId());
 				// 添加详细日志
 				String detailId = ESIDGenerate.getUUID();
 				HashMap<String, String> nMap = new HashMap<String, String>();
 				HashMap<String, String> oMap = new HashMap<String, String>();
 				// 封装进map里
-				nMap.put("InstNo", nMerch.getInstNo());
-				oMap.put("InstNo", oMerch.getInstNo());
-				nMap.put("UpMerchId", nMerch.getUpMerchId());
-				oMap.put("UpMerchId", oMerch.getUpMerchId());
-				nMap.put("TermId", nMerch.getTermId());
-				oMap.put("TermId", oMerch.getTermId());
-				nMap.put("MerchStatus", nMerch.getMerchStatus());
-				oMap.put("MerchStatus", oMerch.getMerchStatus());
-				nMap.put("T0_Contorl", nMerch.getT0Contorl());
-				oMap.put("T0_Contorl", oMerch.getT0Contorl());
-				nMap.put("EncKey", nMerch.getEncKey());
-				oMap.put("EncKey", oMerch.getEncKey());
-				nMap.put("TransModel", nMerch.getTransModel());
-				oMap.put("TransModel", oMerch.getTransModel());
-				nMap.put("MerchPool", nMerch.getMerchPool());
-				oMap.put("MerchPool", oMerch.getMerchPool());
-				nMap.put("SyncSN", nMerch.getSyncSN());
-				oMap.put("SyncSN", oMerch.getSyncSN());
-				nMap.put("Business", nMerch.getBusiness());
-				oMap.put("Business", oMerch.getBusiness());
-				nMap.put("LinkName", nMerch.getLinkName());
-				oMap.put("LinkName", oMerch.getLinkName());
-				nMap.put("MerchTel", nMerch.getMerchTel());
-				oMap.put("MerchTel", oMerch.getMerchTel());
-				nMap.put("MerchAddr", nMerch.getMerchAddr());
-				oMap.put("MerchAddr", oMerch.getMerchAddr());
-				nMap.put("wxAssPayCh", nMerch.getWxAssPayCh());
-				oMap.put("wxAssPayCh", oMerch.getWxAssPayCh());
-				nMap.put("aliAssPayCh", nMerch.getAliAssPayCh());
-				oMap.put("aliAssPayCh", oMerch.getAliAssPayCh());
-				nMap.put("QQAssPayCh", nMerch.getQQAssPayCh());
-				oMap.put("QQAssPayCh", oMerch.getQQAssPayCh());
-				nMap.put("JDAssPayCh", nMerch.getJDAssPayCh());
-				oMap.put("JDAssPayCh", oMerch.getJDAssPayCh());
-				nMap.put("uniAssPayCh", nMerch.getUniAssPayCh());
-				oMap.put("uniAssPayCh", oMerch.getUniAssPayCh());
-				nMap.put("noCardAssPayCh", nMerch.getNoCardAssPayCh());
-				oMap.put("noCardAssPayCh", oMerch.getNoCardAssPayCh());
-				nMap.put("GoodsNameType", nMerch.getGoodsNameType());
-				oMap.put("GoodsNameType", oMerch.getGoodsNameType());
-				nMap.put("AppId", nMerch.getAppId());
-				oMap.put("AppId", oMerch.getAppId());
-				nMap.put("Pid", nMerch.getPid());
-				oMap.put("Pid", oMerch.getPid());
-				nMap.put("SettleKind", nMerch.getSettleKind());
-				oMap.put("SettleKind", oMerch.getSettleKind());
+//				nMap.put("InstNo", nMerch.getInstNo());
+//				oMap.put("InstNo", oMerch.getInstNo());
+//				nMap.put("UpMerchId", nMerch.getUpMerchId());
+//				oMap.put("UpMerchId", oMerch.getUpMerchId());
+//				nMap.put("TermId", nMerch.getTermId());
+//				oMap.put("TermId", oMerch.getTermId());
+//				nMap.put("MerchStatus", nMerch.getMerchStatus());
+//				oMap.put("MerchStatus", oMerch.getMerchStatus());
+//				nMap.put("T0_Contorl", nMerch.getT0Contorl());
+//				oMap.put("T0_Contorl", oMerch.getT0Contorl());
+//				nMap.put("EncKey", nMerch.getEncKey());
+//				oMap.put("EncKey", oMerch.getEncKey());
+//				nMap.put("TransModel", nMerch.getTransModel());
+//				oMap.put("TransModel", oMerch.getTransModel());
+//				nMap.put("MerchPool", nMerch.getMerchPool());
+//				oMap.put("MerchPool", oMerch.getMerchPool());
+//				nMap.put("SyncSN", nMerch.getSyncSN());
+//				oMap.put("SyncSN", oMerch.getSyncSN());
+//				nMap.put("Business", nMerch.getBusiness());
+//				oMap.put("Business", oMerch.getBusiness());
+//				nMap.put("LinkName", nMerch.getLinkName());
+//				oMap.put("LinkName", oMerch.getLinkName());
+//				nMap.put("MerchTel", nMerch.getMerchTel());
+//				oMap.put("MerchTel", oMerch.getMerchTel());
+//				nMap.put("MerchAddr", nMerch.getMerchAddr());
+//				oMap.put("MerchAddr", oMerch.getMerchAddr());
+//				nMap.put("wxAssPayCh", nMerch.getWxAssPayCh());
+//				oMap.put("wxAssPayCh", oMerch.getWxAssPayCh());
+//				nMap.put("aliAssPayCh", nMerch.getAliAssPayCh());
+//				oMap.put("aliAssPayCh", oMerch.getAliAssPayCh());
+//				nMap.put("QQAssPayCh", nMerch.getQQAssPayCh());
+//				oMap.put("QQAssPayCh", oMerch.getQQAssPayCh());
+//				nMap.put("JDAssPayCh", nMerch.getJDAssPayCh());
+//				oMap.put("JDAssPayCh", oMerch.getJDAssPayCh());
+//				nMap.put("uniAssPayCh", nMerch.getUniAssPayCh());
+//				oMap.put("uniAssPayCh", oMerch.getUniAssPayCh());
+//				nMap.put("noCardAssPayCh", nMerch.getNoCardAssPayCh());
+//				oMap.put("noCardAssPayCh", oMerch.getNoCardAssPayCh());
+//				nMap.put("GoodsNameType", nMerch.getGoodsNameType());
+//				oMap.put("GoodsNameType", oMerch.getGoodsNameType());
+//				nMap.put("AppId", nMerch.getAppId());
+//				oMap.put("AppId", oMerch.getAppId());
+//				nMap.put("Pid", nMerch.getPid());
+//				oMap.put("Pid", oMerch.getPid());
+//				nMap.put("SettleKind", nMerch.getSettleKind());
+//				oMap.put("SettleKind", oMerch.getSettleKind());
 				// 保存详细日志
 				saveLogDetail("t_merch", nMap, oMap, detailId, "update");
 				log.setType("更新");
-				log.setOperationObjId(oMerch.getMerchId());
-				log.setOperationObjName(oMerch.getMerchName());
+//				log.setOperationObjId(oMerch.getMerchId());
+//				log.setOperationObjName(oMerch.getMerchName());
 				log.setOperationObj("商户");
 				log.setDetailId(detailId);
 			} else if (controller.getClass().getSimpleName().equals("UserController")) { // 用户管理
@@ -381,7 +381,7 @@ public class GloBalInterceptor implements Interceptor {
 				Merch nMerch = controller.getModel(Merch.class, "merch");
 				// 添加详细日志
 				log.setType("添加");
-				log.setOperationObjId(nMerch.getMerchId());
+//				log.setOperationObjId(nMerch.getMerchId());
 				log.setOperationObjName(nMerch.getMerchName());
 				log.setOperationObj("商户");
 			}  else if (controller.getClass().getSimpleName().equals("UserController")) { // 用户
@@ -407,7 +407,7 @@ public class GloBalInterceptor implements Interceptor {
 			if (controller.getClass().getSimpleName().equals("MerchController")) { // 商户
 				for (int i = 0; i < ids.length; i++) {
 					Merch merch = Merch.dao.findById(ids[i]);
-					map.put(ids[i], merch.getMerchId() + ":" + merch.getMerchName());
+//					map.put(ids[i], merch.getMerchId() + ":" + merch.getMerchName());
 				}
 				// 保存详细日志
 				saveLogDetail("t_merch", map, null, detailId, "delete");
