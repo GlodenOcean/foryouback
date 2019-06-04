@@ -23,7 +23,7 @@ public class GeneratorModel {
 	
 	public static void main(String[] args) {
 		// base model 所使用的包名
-		String baseModelPackageName = "cn.hicard.nocard.web.model.base";
+		String baseModelPackageName = "cn.hicard.shop.web.model.base";
 		// base model 文件保存路径
 		String baseModelOutputDir = PathKit.getWebRootPath() + "/../src/main/model/base";
 
@@ -37,13 +37,13 @@ public class GeneratorModel {
 		// 设置数据库方言
 		gernerator.setDialect(new MysqlDialect());
 		// 添加不需要生成的表名
-		gernerator.addExcludedTable("adv");
+		gernerator.addExcludedTable("");
 		// 设置是否在 Model 中生成 dao 对象
 		gernerator.setGenerateDaoInModel(true);
 		// 设置是否生成字典文件
 		gernerator.setGenerateDataDictionary(false);
 		// 设置需要被移除的表名前缀用于生成modelName。例如表名 "osc_user"，移除前缀 "osc_"后生成的model名为 "User"而非 OscUser
-		gernerator.setRemovedTableNamePrefixes("t_","sm_","ta_","tr_","tl_");
+		gernerator.setRemovedTableNamePrefixes("t_","sm_","shop_","tr_","tl_");
 		// 生成
 		gernerator.generate();
 	}

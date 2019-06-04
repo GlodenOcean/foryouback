@@ -7,10 +7,95 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a824bc84-7766-49bd-997b-e0f35542fa88" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/cn/online/shop/web/model/Goods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/interceptors/GloBalInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/nocard/interceptors/GloBalInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/util/MerchUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/nocard/util/MerchUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/controller/MerchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/nocard/web/controller/MerchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/view/wechat/payView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/view/wechat/payView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/manager_war_exploded/WEB-INF/classes/cn/online/nocard/config/ModelMappingConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/manager_war_exploded/WEB-INF/classes/cn/online/nocard/config/ModelMappingConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/manager_war_exploded/WEB-INF/classes/cn/online/nocard/interceptors/GloBalInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/manager_war_exploded/WEB-INF/classes/cn/online/nocard/interceptors/GloBalInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/manager_war_exploded/WEB-INF/classes/cn/online/nocard/util/MerchUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/manager_war_exploded/WEB-INF/classes/cn/online/nocard/util/MerchUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/manager_war_exploded/WEB-INF/classes/cn/online/nocard/web/controller/MerchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/manager_war_exploded/WEB-INF/classes/cn/online/nocard/web/controller/MerchController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/manager_war_exploded/WEB-INF/classes/cn/online/nocard/web/model/Goods.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/manager_war_exploded/WEB-INF/classes/cn/online/nocard/web/model/Goods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/manager_war_exploded/WEB-INF/classes/cn/online/nocard/web/model/Merch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/manager_war_exploded/WEB-INF/classes/cn/online/nocard/web/model/Merch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/manager_war_exploded/WEB-INF/classes/cn/online/nocard/web/model/base/BaseMerch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/manager_war_exploded/WEB-INF/classes/cn/online/nocard/web/model/base/BaseMerch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/config/ModelMappingConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/config/ModelMappingConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/config/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/config/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/config/RouteConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/config/RouteConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/enums/PayWayEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/enums/PayWayEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/interceptors/ExceptionInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/interceptors/ExceptionInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/interceptors/GloBalInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/interceptors/GloBalInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/interceptors/SessionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/interceptors/SessionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/util/FormatCensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/util/FormatCensor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/util/HCBase64.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/util/HCBase64.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/util/HCBoolean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/util/HCBoolean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/util/HCConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/util/HCConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/util/HCDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/util/HCDate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/util/HCExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/util/HCExcel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/util/HCHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/util/HCHttp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/util/HCIDGenerate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/util/HCIDGenerate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/util/HCJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/util/HCJson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/util/HCMD5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/util/HCMD5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/util/HCNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/util/HCNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/util/HCSms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/util/HCSms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/util/HCSqlHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/util/HCSqlHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/util/HCString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/util/HCString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/util/HttpClientUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/util/HttpClientUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/util/IdWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/util/IdWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/util/MatrixToImageWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/util/MatrixToImageWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/util/MerchUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/util/PictureProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/util/PictureProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/util/QRCodeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/util/QRCodeUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/util/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/util/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/util/SSLClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/util/SSLClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/util/SmsClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/util/SmsClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/util/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/util/StringUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/vo/HCResponser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/vo/HCResponser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/controller/ExceptionLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/web/controller/ExceptionLogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/web/controller/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/web/controller/GoodsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/controller/LogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/web/controller/LogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/web/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/controller/MerchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/web/controller/MerchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/web/controller/RoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/controller/SmsClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/web/controller/SmsClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/controller/SourceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/web/controller/SourceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/web/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/model/ExceptionLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/web/model/ExceptionLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/model/Goods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/model/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/web/model/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/model/LogDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/web/model/LogDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/model/Merch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/web/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/web/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/model/Source.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/web/model/Source.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/web/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/model/base/BaseAA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/web/model/base/BaseAA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/model/base/BaseExceptionLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/web/model/base/BaseExceptionLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/model/base/BaseGoods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/model/base/BaseLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/web/model/base/BaseLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/model/base/BaseLogDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/web/model/base/BaseLogDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/model/base/BaseMerch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/model/base/BaseOrder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/model/base/BaseRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/web/model/base/BaseRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/model/base/BaseSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/web/model/base/BaseSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/model/base/BaseUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/web/model/base/BaseUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/service/APIService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/web/service/APIService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/vo/Basic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/web/vo/Basic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/vo/LuaParameter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/web/vo/LuaParameter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/online/nocard/web/vo/ZTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/online/shop/web/vo/ZTreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/GeneratorModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GeneratorModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/NoCardServerStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/NoCardServerStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/model/Goods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/model/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/model/Merch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/model/SysUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/model/_MappingKit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/model/base/BaseGoods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/model/base/BaseMember.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/model/base/BaseMerch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/model/base/BaseSysUser.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/WebRoot/WEB-INF/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,105 +107,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/config/ModelMappingConfig.java">
+        <entry file="file://$PROJECT_DIR$/src/cn/online/shop/interceptors/SessionListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/util/MerchUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="40" column="17" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="40" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/model/base/BaseGoods.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
-              <folding>
-                <element signature="e#637#638#0" expanded="true" />
-                <element signature="e#674#675#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/model/Goods.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/interceptors/GloBalInterceptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="410" column="17" lean-forward="true" selection-start-line="410" selection-start-column="17" selection-end-line="410" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/view/login.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/model/base/BaseMerch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
-              <folding>
-                <element signature="e#846#847#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/model/Merch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1010">
-              <caret line="163" column="62" selection-start-line="163" selection-start-column="62" selection-end-line="163" selection-end-column="62" />
-              <folding>
-                <element signature="e#2094#2095#0" expanded="true" />
-                <element signature="e#2180#2181#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="285">
+              <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/controller/MerchController.java">
+        <entry file="file://$PROJECT_DIR$/src/cn/online/shop/web/controller/GoodsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/model/base/BaseMerch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+            <state relative-caret-position="254">
+              <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -161,11 +160,9 @@
         <option value="$PROJECT_DIR$/.project" />
         <option value="$PROJECT_DIR$/src/cn/online/nocard/web/controller/FileController.java" />
         <option value="$PROJECT_DIR$/src/db.properties" />
-        <option value="$PROJECT_DIR$/src/main/GeneratorModel.java" />
         <option value="$PROJECT_DIR$/src/cn/online/nocard/web/model/base/BaseGoods.java" />
         <option value="$PROJECT_DIR$/src/cn/online/nocard/web/model/Role.java" />
         <option value="$PROJECT_DIR$/src/cn/online/nocard/config/RouteConfig.java" />
-        <option value="$PROJECT_DIR$/src/cn/online/nocard/web/controller/GoodsController.java" />
         <option value="$PROJECT_DIR$/文档/数据库设计" />
         <option value="$PROJECT_DIR$/WebRoot/WEB-INF/view/trans/reject/transRejectForm.jsp" />
         <option value="$PROJECT_DIR$/WebRoot/WEB-INF/view/welcome.jsp" />
@@ -175,13 +172,20 @@
         <option value="$PROJECT_DIR$/WebRoot/build/custom/js/login.js" />
         <option value="$PROJECT_DIR$/WebRoot/build/framework/js/login.js" />
         <option value="$PROJECT_DIR$/WebRoot/WEB-INF/view/login.jsp" />
+        <option value="$PROJECT_DIR$/src/cn/online/nocard/config/ModelMappingConfig.java" />
+        <option value="$PROJECT_DIR$/src/cn/online/nocard/web/model/base/BaseOrder.java" />
+        <option value="$PROJECT_DIR$/src/cn/online/nocard/web/model/base/BaseShopMerch.java" />
+        <option value="$PROJECT_DIR$/src/main/GeneratorModel.java" />
+        <option value="$PROJECT_DIR$/src/cn/online/nocard/web/model/base/BaseMember.java" />
         <option value="$PROJECT_DIR$/src/cn/online/nocard/web/model/base/BaseMerch.java" />
         <option value="$PROJECT_DIR$/src/cn/online/nocard/web/model/Merch.java" />
         <option value="$PROJECT_DIR$/src/cn/online/nocard/web/model/Goods.java" />
-        <option value="$PROJECT_DIR$/src/cn/online/nocard/config/ModelMappingConfig.java" />
+        <option value="$PROJECT_DIR$/src/cn/online/nocard/web/controller/MerchController.java" />
+        <option value="$PROJECT_DIR$/src/cn/online/nocard/web/model/Order.java" />
         <option value="$PROJECT_DIR$/src/cn/online/nocard/interceptors/GloBalInterceptor.java" />
         <option value="$PROJECT_DIR$/src/cn/online/nocard/util/MerchUtil.java" />
-        <option value="$PROJECT_DIR$/src/cn/online/nocard/web/controller/MerchController.java" />
+        <option value="$PROJECT_DIR$/src/cn/online/nocard/web/controller/GoodsController.java" />
+        <option value="$PROJECT_DIR$/src/cn/online/shop/web/controller/GoodsController.java" />
       </list>
     </option>
   </component>
@@ -198,12 +202,16 @@
     <option name="width" value="1400" />
     <option name="height" value="954" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -220,61 +228,7 @@
               <item name="manager" type="b2602c69:ProjectViewProjectNode" />
               <item name="manager" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="nocard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="manager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="nocard" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="manager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="nocard" type="462c0819:PsiDirectoryNode" />
-              <item name="interceptors" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="manager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="nocard" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="manager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="nocard" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="manager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="nocard" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="manager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="nocard" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="manager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="nocard" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="manager" type="b2602c69:ProjectViewProjectNode" />
@@ -288,14 +242,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="manager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="manager" type="b2602c69:ProjectViewProjectNode" />
@@ -306,14 +252,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559561185004" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559646085692" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -324,9 +268,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.online.nocard.web.model" />
       <recent name="cn.online.nocard.web.model.base" />
       <recent name="cn.online.nocard.web.controller" />
-      <recent name="cn.online.nocard.web.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\manager\src\cn\online\nocard\web\model\base" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -344,6 +291,19 @@
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.40">
     <configuration name="GeneratorModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.GeneratorModel" />
+      <module name="manager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NoCardServerStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.NoCardServerStart" />
       <module name="manager" />
       <extension name="coverage">
         <pattern>
@@ -493,6 +453,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NoCardServerStart" />
         <item itemvalue="Application.GeneratorModel" />
       </list>
     </recent_temporary>
@@ -516,7 +477,8 @@
       <workItem from="1559219589812" duration="175000" />
       <workItem from="1559268025246" duration="754000" />
       <workItem from="1559268787121" duration="10598000" />
-      <workItem from="1559559014473" duration="2168000" />
+      <workItem from="1559559014473" duration="3579000" />
+      <workItem from="1559645615881" duration="531000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1559269345958</created>
@@ -553,17 +515,32 @@
       <option name="project" value="LOCAL" />
       <updated>1559561076324</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="把t改成shop">
+      <created>1559561194900</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1559561194900</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24066000" />
+    <option name="totallyTimeSpent" value="26008000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.2973545" visible="true" weight="0.25479743" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.2973545" visible="true" weight="0.25746268" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -572,15 +549,15 @@
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.13434453" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Java Enterprise" order="10" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Application Servers" order="13" weight="0.32900432" />
@@ -612,46 +589,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="把t改成shop" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/view/fixCode/fixCodeForm.jsp" />
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/view/qrcode/web/generate.jsp" />
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/view/account/detail/accountDetailForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/view/account/inst/accountChannelList.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/controller/LogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.project">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/controller/FileController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/jfinal-2.2-bin-with-src.jar!/com/jfinal/plugin/activerecord/generator/MetaBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/jfinal-2.2-bin-with-src.jar!/com/jfinal/plugin/activerecord/generator/Generator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -670,17 +607,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/model/base/BaseRole.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/online/shop/web/model/base/BaseRole.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
           <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/model/base/BaseOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-297">
-          <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -715,7 +645,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/model/base/BaseAA.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/online/shop/web/model/base/BaseAA.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
           <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
@@ -729,45 +659,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/model/base/BaseLog.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/online/shop/web/model/base/BaseLog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="9" column="87" lean-forward="true" selection-start-line="9" selection-start-column="87" selection-end-line="9" selection-end-column="87" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/model/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/online/shop/web/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/GeneratorModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="34" column="16" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/model/Log.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-152">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/model/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="310" column="23" selection-start-line="310" selection-start-column="23" selection-end-line="310" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -785,23 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/controller/GoodsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="23" column="36" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/interceptors/SessionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/view/user/userList.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -809,7 +694,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/interceptors/ExceptionInterceptor.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/online/shop/interceptors/ExceptionInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="31" selection-start-line="31" selection-end-line="31" />
@@ -838,7 +723,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/controller/MainController.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/online/shop/web/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="99" column="22" selection-start-line="99" selection-start-column="22" selection-end-line="99" selection-end-column="22" />
@@ -849,14 +734,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/model/base/BaseUser.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/online/shop/web/model/base/BaseUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="969">
           <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/model/User.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/online/shop/web/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
@@ -870,14 +755,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/config/WebConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/online/shop/config/WebConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/config/RouteConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/online/shop/config/RouteConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="17" column="56" lean-forward="true" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
@@ -891,20 +776,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/model/Merch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/model/base/BaseMerch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/view/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="556">
@@ -912,9 +783,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/model/base/BaseMerch.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/online/shop/config/ModelMappingConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
+        <state relative-caret-position="122">
+          <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/model/Merch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/model/base/BaseShopGoods.java" />
+    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/model/base/BaseShopOrder.java" />
+    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/model/base/BaseShopMember.java" />
+    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/model/base/BaseShopMerch.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/model/base/BaseMerch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="137" column="5" selection-start-line="137" selection-start-column="5" selection-end-line="137" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/model/_MappingKit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/GeneratorModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="43" column="52" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/online/shop/web/model/base/BaseOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="64" column="4" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
+          <folding>
+            <element signature="e#1270#1271#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/online/shop/web/model/base/BaseMember.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/online/shop/web/model/base/BaseGoods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/online/shop/web/model/base/BaseMerch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
           <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
           <folding>
             <element signature="e#846#847#0" expanded="true" />
@@ -922,63 +852,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/model/base/BaseGoods.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/online/shop/web/model/Merch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#637#638#0" expanded="true" />
-            <element signature="e#674#675#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="209">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/model/Merch.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/online/shop/web/model/Goods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1010">
-          <caret line="163" column="62" selection-start-line="163" selection-start-column="62" selection-end-line="163" selection-end-column="62" />
-          <folding>
-            <element signature="e#2094#2095#0" expanded="true" />
-            <element signature="e#2180#2181#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/model/Goods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+        <state relative-caret-position="266">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/config/ModelMappingConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/online/shop/web/controller/MerchController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+        <state relative-caret-position="323">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="24" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/interceptors/GloBalInterceptor.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/online/shop/web/model/Order.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="410" column="17" lean-forward="true" selection-start-line="410" selection-start-column="17" selection-end-line="410" selection-end-column="17" />
+        <state relative-caret-position="148">
+          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/online/shop/web/model/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/online/shop/web/model/LogDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/online/shop/web/model/Log.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/online/shop/interceptors/GloBalInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="408" column="61" lean-forward="true" selection-start-line="408" selection-start-column="61" selection-end-line="408" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/online/shop/util/HCHttp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="134" column="19" selection-start-line="134" selection-start-column="19" selection-end-line="134" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/util/MerchUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="40" column="17" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="40" selection-end-column="17" />
+        <state relative-caret-position="1083">
+          <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/online/nocard/web/controller/MerchController.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/online/shop/interceptors/SessionListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+        <state relative-caret-position="285">
+          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/online/shop/web/controller/GoodsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
         </state>
       </provider>
     </entry>
