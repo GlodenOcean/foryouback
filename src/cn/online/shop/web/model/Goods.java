@@ -22,7 +22,7 @@ public class Goods extends BaseGoods<Goods> {
 
 		ESSQLHelper sql = new ESSQLHelper(" from shop_goods WHERE 1 = 1");
 		sql.equals("merchId", sc.getString("merchId"));
-		sql.equals("status", 1);
+		sql.equals("status", 0);
 		return super.paginate(pageNumber, pageSize, "select * ", sql.toString(),sql.getParams());
 	}
 }

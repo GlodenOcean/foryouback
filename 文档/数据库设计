@@ -10,172 +10,62 @@ Target Server Type    : MYSQL
 Target Server Version : 50643
 File Encoding         : 65001
 
-Date: 2019-05-31 14:53:06
+Date: 2019-06-06 15:35:41
 */
 
 SET FOREIGN_KEY_CHECKS=0;
 
-
 -- ----------------------------
--- Table structure for `sys_user`
+-- Table structure for shop_goods
 -- ----------------------------
-DROP TABLE IF EXISTS `sys_user`;
-CREATE TABLE `sys_user` (
-  `id` varchar(32) NOT NULL COMMENT '主键',
-  `loginId` varchar(20) NOT NULL COMMENT '登录ID',
-  `userName` varchar(20) DEFAULT NULL COMMENT '姓名',
-  `password` varchar(50) DEFAULT NULL COMMENT '密码',
-  `area` varchar(5) DEFAULT NULL COMMENT '地区',
-  `department` varchar(60) DEFAULT NULL COMMENT '部门',
-  `useType` char(1) NOT NULL COMMENT '0=长期1=临时',
-  `startDate` char(10) DEFAULT NULL COMMENT '有效期开始',
-  `endDate` char(10) DEFAULT NULL COMMENT '有效期截止',
-  `operationTime` char(19) DEFAULT NULL COMMENT '操作时间',
-  `updateTime` char(19) DEFAULT NULL COMMENT '修改时间',
-  `status` char(1) NOT NULL COMMENT '0=禁用1=启用',
-  `roleId` char(32) DEFAULT NULL COMMENT '角色ID',
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `userid` (`loginId`)
-) ENGINE=InnoDB DEFAULT CHARSET=gbk;
-
-DROP TABLE IF EXISTS `sys_source`;
-CREATE TABLE `sys_source` (
-  `id` char(32) NOT NULL COMMENT '主键',
-  `controlId` varchar(100) DEFAULT NULL COMMENT '资源ID',
-  `url` varchar(100) DEFAULT NULL COMMENT '资源URL',
-  `name` varchar(100) DEFAULT NULL COMMENT '资源名称',
-  `parentId` char(32) DEFAULT NULL COMMENT '资源的父资源主键',
-  `sort` int(11) DEFAULT NULL COMMENT '排序',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=gbk;
-
-DROP TABLE IF EXISTS `sys_log_detail`;
-CREATE TABLE `sys_log_detail` (
-  `detailId` char(32) DEFAULT NULL COMMENT '关联日志详情id',
-  `id` char(32) NOT NULL COMMENT '主键',
-  `operateTable` varchar(64) DEFAULT NULL COMMENT '操作对应的表',
-  `column` varchar(32) DEFAULT NULL COMMENT '修改字段',
-  `oldValue` varchar(256) DEFAULT NULL COMMENT '旧值',
-  `newValue` varchar(256) DEFAULT NULL COMMENT '新值',
-  `AddTime` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '添加时间',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=gbk;
-
-DROP TABLE IF EXISTS `sys_role`;
-CREATE TABLE `sys_role` (
-  `id` char(32) NOT NULL COMMENT '主键',
-  `roleName` varchar(32) DEFAULT NULL COMMENT '角色名称',
-  `updateDateTime` char(19) DEFAULT NULL COMMENT '更新日期时间',
-  `description` varchar(128) DEFAULT NULL COMMENT '角色描述',
-  `source` varchar(1000) DEFAULT NULL COMMENT '资源',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=gbk;
-
-DROP TABLE IF EXISTS `sys_log`;
-CREATE TABLE `sys_log` (
-  `id` char(32) NOT NULL COMMENT '主键',
-  `loginId` char(32) DEFAULT NULL COMMENT '操作员(用户)',
-  `type` varchar(32) DEFAULT NULL COMMENT '操作类型',
-  `remark` varchar(512) DEFAULT NULL COMMENT '操作备注',
-  `date` char(10) DEFAULT NULL COMMENT '操作日期',
-  `time` char(8) DEFAULT NULL COMMENT '操作时间',
-  `ip` varchar(20) DEFAULT NULL COMMENT 'IP地址',
-  `userName` varchar(32) DEFAULT NULL,
-  `operationObjId` varchar(32) DEFAULT NULL COMMENT '操作对象编号',
-  `operationObjName` varchar(128) DEFAULT NULL COMMENT '操作对象名称',
-  `operationObj` varchar(32) DEFAULT NULL COMMENT '操作对象',
-  `detailId` varchar(32) DEFAULT NULL COMMENT '关联日志详情',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=gbk;
-
-DROP TABLE IF EXISTS `sys_exception_log`;
-CREATE TABLE `sys_exception_log` (
-  `id` char(32) NOT NULL,
-  `actionKey` varchar(100) DEFAULT NULL COMMENT '请求路径',
-  `throwDate` char(10) DEFAULT NULL COMMENT '异常抛出日期',
-  `throwTime` char(8) DEFAULT NULL COMMENT '异常抛出时间',
-  `throwMessage` text COMMENT '抛出异常的控制器',
-  `userLoginId` varchar(20) DEFAULT NULL COMMENT '用户登录账户名',
-  `userId` int(11) DEFAULT NULL COMMENT '用户ID',
-  `from` smallint(1) DEFAULT NULL COMMENT '异常来源0=网页操作,1=接口操作',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=gbk;
-
-INSERT INTO `sys_user` VALUES ('505460a6a3b9462ba8bea20adeab3bb8', 'ocean', '管理员', '39c3f82b0f479fa61bf46f78e8b4df35', null, '技术部门', '0', '2017-04-26', '2095-12-28', null, '2017-11-18 19:24:29', '1', '76c5922be3324230aba944b22b2ce454');
-
-
-=======================================================================================================================================================================================
-
--- ----------------------------
--- Table structure for sys_user
--- ----------------------------
-DROP TABLE IF EXISTS `sys_user`;
-CREATE TABLE `sys_user` (
-  `userid` varchar(32) NOT NULL,
-  `username` varchar(32) DEFAULT NULL,
-  `password` varchar(64) DEFAULT NULL,
-  `authid` varchar(32) DEFAULT NULL,
-  `area` varchar(8) DEFAULT NULL,
-  `department` varchar(64) DEFAULT NULL,
-  `flagtime` char(1) DEFAULT NULL,
-  `startdate` varchar(32) DEFAULT NULL,
-  `enddate` varchar(32) DEFAULT NULL,
-  `modtime` varchar(32) DEFAULT NULL,
-  `addtime` varchar(32) DEFAULT NULL,
-  `flag` char(1) DEFAULT NULL,
-  PRIMARY KEY (`userid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of sys_user
--- ----------------------------
-
--- ----------------------------
--- Table structure for t_goods
--- ----------------------------
-DROP TABLE IF EXISTS `t_goods`;
-CREATE TABLE `t_goods` (
+DROP TABLE IF EXISTS `shop_goods`;
+CREATE TABLE `shop_goods` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `create_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '创建时间',
   `update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
-  `status` int(1) DEFAULT '0' COMMENT '店铺状态（0正常，1禁用，2信用不行）',
+  `status` int(1) DEFAULT '0' COMMENT '商品状态（0正常，1下架）',
   `merch_id` varchar(128) NOT NULL COMMENT '商户表的id',
+  `goods_no` varchar(64) DEFAULT NULL COMMENT '商品编号',
   `goods_name` varchar(256) NOT NULL DEFAULT '' COMMENT '商品名称',
-  `pic_address` varchar(256) NOT NULL DEFAULT '' COMMENT '商品图片地址',
   `price` double(8,2) NOT NULL DEFAULT '0.00' COMMENT '商品价格',
+  `pic_address1` varchar(256) NOT NULL DEFAULT '' COMMENT '商品图片地址',
+  `pic_address2` varchar(255) DEFAULT NULL COMMENT '商品图片地址',
+  `pic_address3` varchar(255) DEFAULT NULL COMMENT '商品图片地址',
+  `sort` int(1) DEFAULT '1' COMMENT '商品在店铺的排序',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='商品表';
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='商品表';
 
 -- ----------------------------
--- Records of t_goods
+-- Records of shop_goods
 -- ----------------------------
-INSERT INTO `t_goods` VALUES ('1', '2019-05-30 20:16:10', '2019-05-30 20:16:13', '0', '1', '小米', 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3062065710,2054643169&fm=26&gp=0.jpg', '12.50');
+INSERT INTO `shop_goods` VALUES ('1', '2019-06-04 19:10:05', '2019-06-04 19:10:05', '0', '1', '10001', '小米', '12.50', 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3062065710,2054643169&fm=26&gp=0.jpg', null, null, '1');
+INSERT INTO `shop_goods` VALUES ('2', '2019-06-04 19:10:00', '2019-06-04 19:10:00', '0', '1', '10002', '大米', '13.60', 'http://image1.suning.cn/b2c/catentries/000000000104607284_4_800x800.jpg', '', null, '1');
 
 -- ----------------------------
--- Table structure for t_member
+-- Table structure for shop_member
 -- ----------------------------
-DROP TABLE IF EXISTS `t_member`;
-CREATE TABLE `t_member` (
+DROP TABLE IF EXISTS `shop_member`;
+CREATE TABLE `shop_member` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `create_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '创建时间',
   `update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
   `status` int(1) DEFAULT '0' COMMENT '买家状态（0正常，1禁用，2违规）',
   `member_name` varchar(32) NOT NULL DEFAULT '' COMMENT '买家名',
   `member_phone` int(11) NOT NULL DEFAULT '0' COMMENT '买家手机号',
-  `member_address` int(11) NOT NULL DEFAULT '0' COMMENT '买家地址',
+  `member_address` varchar(256) NOT NULL DEFAULT '0' COMMENT '买家地址',
   `weixin_openid` varchar(128) NOT NULL COMMENT '买家的微信id',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='买家信息表';
 
 -- ----------------------------
--- Records of t_member
+-- Records of shop_member
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for t_merch
+-- Table structure for shop_merch
 -- ----------------------------
-DROP TABLE IF EXISTS `t_merch`;
-CREATE TABLE `t_merch` (
+DROP TABLE IF EXISTS `shop_merch`;
+CREATE TABLE `shop_merch` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `merch_no` varchar(128) NOT NULL COMMENT '商户编号',
   `merch_name` varchar(32) NOT NULL DEFAULT '' COMMENT '商户名（店铺名）',
@@ -197,6 +87,164 @@ CREATE TABLE `t_merch` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='商户和电铺信息表';
 
 -- ----------------------------
--- Records of t_merch
+-- Records of shop_merch
 -- ----------------------------
-INSERT INTO `t_merch` VALUES ('1', 'test', 'test', '1353364082', '894189960@qq.com', '增城市菜园路11号', '广东', '广州', '增城', '增城市菜园路11号', 'ocean', '440183166', '0', null, null, '0', '');
+INSERT INTO `shop_merch` VALUES ('1', 'test', 'test', '1353364082', '894189960@qq.com', '增城市菜园路11号', '广东', '广州', '增城', '增城市菜园路11号', 'ocean', '440183166', '0', null, null, '0', '');
+
+-- ----------------------------
+-- Table structure for shop_order
+-- ----------------------------
+DROP TABLE IF EXISTS `shop_order`;
+CREATE TABLE `shop_order` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `create_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '创建时间',
+  `update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+  `status` int(1) DEFAULT '0' COMMENT '订单状态（0初始化，1客户取消订单，2商家确认订单，3商家取消订单）',
+  `remark` varchar(256) DEFAULT '' COMMENT '备注',
+  `order_id` varchar(32) NOT NULL DEFAULT '' COMMENT '登录id',
+  `merch_no` varchar(128) NOT NULL COMMENT '商户编号',
+  `merch_name` varchar(32) NOT NULL DEFAULT '' COMMENT '商户名（店铺名）',
+  `merch_phone` int(11) NOT NULL DEFAULT '0' COMMENT '商户手机号',
+  `member_name` varchar(32) NOT NULL DEFAULT '' COMMENT '买家名',
+  `member_phone` int(11) NOT NULL DEFAULT '0' COMMENT '买家手机号',
+  `member_address` varchar(256) NOT NULL DEFAULT '0' COMMENT '买家地址',
+  `goods_nos` varchar(512) NOT NULL DEFAULT '' COMMENT '订单商品列表',
+  `price` double(8,2) NOT NULL DEFAULT '0.00' COMMENT '总价格',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='订单表';
+
+-- ----------------------------
+-- Records of shop_order
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for sys_exception_log
+-- ----------------------------
+DROP TABLE IF EXISTS `sys_exception_log`;
+CREATE TABLE `sys_exception_log` (
+  `id` char(32) NOT NULL,
+  `actionKey` varchar(100) DEFAULT NULL COMMENT '请求路径',
+  `throwDate` char(10) DEFAULT NULL COMMENT '异常抛出日期',
+  `throwTime` char(8) DEFAULT NULL COMMENT '异常抛出时间',
+  `throwMessage` text COMMENT '抛出异常的控制器',
+  `userLoginId` varchar(20) DEFAULT NULL COMMENT '用户登录账户名',
+  `userId` int(11) DEFAULT NULL COMMENT '用户ID',
+  `from` smallint(1) DEFAULT NULL COMMENT '异常来源0=网页操作,1=接口操作',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+
+-- ----------------------------
+-- Records of sys_exception_log
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for sys_log
+-- ----------------------------
+DROP TABLE IF EXISTS `sys_log`;
+CREATE TABLE `sys_log` (
+  `id` char(32) NOT NULL COMMENT '主键',
+  `loginId` char(32) DEFAULT NULL COMMENT '操作员(用户)',
+  `type` varchar(32) DEFAULT NULL COMMENT '操作类型',
+  `remark` varchar(512) DEFAULT NULL COMMENT '操作备注',
+  `date` char(10) DEFAULT NULL COMMENT '操作日期',
+  `time` char(8) DEFAULT NULL COMMENT '操作时间',
+  `ip` varchar(20) DEFAULT NULL COMMENT 'IP地址',
+  `userName` varchar(32) DEFAULT NULL,
+  `operationObjId` varchar(32) DEFAULT NULL COMMENT '操作对象编号',
+  `operationObjName` varchar(128) DEFAULT NULL COMMENT '操作对象名称',
+  `operationObj` varchar(32) DEFAULT NULL COMMENT '操作对象',
+  `detailId` varchar(32) DEFAULT NULL COMMENT '关联日志详情',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+
+-- ----------------------------
+-- Records of sys_log
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for sys_log_detail
+-- ----------------------------
+DROP TABLE IF EXISTS `sys_log_detail`;
+CREATE TABLE `sys_log_detail` (
+  `detailId` char(32) DEFAULT NULL COMMENT '关联日志详情id',
+  `id` char(32) NOT NULL COMMENT '主键',
+  `operateTable` varchar(64) DEFAULT NULL COMMENT '操作对应的表',
+  `column` varchar(32) DEFAULT NULL COMMENT '修改字段',
+  `oldValue` varchar(256) DEFAULT NULL COMMENT '旧值',
+  `newValue` varchar(256) DEFAULT NULL COMMENT '新值',
+  `AddTime` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '添加时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+
+-- ----------------------------
+-- Records of sys_log_detail
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for sys_role
+-- ----------------------------
+DROP TABLE IF EXISTS `sys_role`;
+CREATE TABLE `sys_role` (
+  `id` char(32) NOT NULL COMMENT '主键',
+  `roleName` varchar(32) DEFAULT NULL COMMENT '角色名称',
+  `updateDateTime` char(19) DEFAULT NULL COMMENT '更新日期时间',
+  `description` varchar(128) DEFAULT NULL COMMENT '角色描述',
+  `source` varchar(1000) DEFAULT NULL COMMENT '资源',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+
+-- ----------------------------
+-- Records of sys_role
+-- ----------------------------
+INSERT INTO `sys_role` VALUES ('76c5922be3324230aba944b22b2ce454', '管理员', '2016-11-15 11:17:04', '管理员', 'order,order_orderhistory,order_history,order_pushhistory,order_reject,base,base_merchList,base_upMerchList,base_instList,base_permissionList,merch,merch_channelmerchList,merch_countList,merch_sysBusinessList,merch_merchBusinessMap,merch_channelBusinessMap,merch_merchPool,merch_merchPool,interface,interface_createOrderJuHe,interface_createBalancePay,account,account_account,account_accountMerch,account_accountInst,account_rate,account_accountMerchHistory,system,system_user,system_role,system_source,system_operationLog,system_exceptionLog,');
+
+-- ----------------------------
+-- Table structure for sys_source
+-- ----------------------------
+DROP TABLE IF EXISTS `sys_source`;
+CREATE TABLE `sys_source` (
+  `id` char(32) NOT NULL COMMENT '主键',
+  `controlId` varchar(100) DEFAULT NULL COMMENT '资源ID',
+  `url` varchar(100) DEFAULT NULL COMMENT '资源URL',
+  `name` varchar(100) DEFAULT NULL COMMENT '资源名称',
+  `parentId` char(32) DEFAULT NULL COMMENT '资源的父资源主键',
+  `sort` int(11) DEFAULT NULL COMMENT '排序',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+
+-- ----------------------------
+-- Records of sys_source
+-- ----------------------------
+INSERT INTO `sys_source` VALUES ('01c1e07495b3451fadd4156a36a632f5', 'system_exceptionLog', null, '异常日志', '8d6c3d5896b14d01b24bdb2acd77e6d5', '5');
+INSERT INTO `sys_source` VALUES ('12032c6c2fbf4f2ca32a1d463639847c', 'system_operationLog', null, '操作日志', '8d6c3d5896b14d01b24bdb2acd77e6d5', '4');
+INSERT INTO `sys_source` VALUES ('492d711b933f4533b8edddea94d7c011', 'system_role', null, '角色管理', '8d6c3d5896b14d01b24bdb2acd77e6d5', '2');
+INSERT INTO `sys_source` VALUES ('7caa4b93211c4fcc976bb74c22f8ffc1', 'system_user', null, '用户管理', '8d6c3d5896b14d01b24bdb2acd77e6d5', '1');
+INSERT INTO `sys_source` VALUES ('8d6c3d5896b14d01b24bdb2acd77e6d5', 'system', null, '系统管理', '0', '7');
+INSERT INTO `sys_source` VALUES ('baeb9ae7fa7a445c898807840d224576', 'system_source', null, '资源管理', '8d6c3d5896b14d01b24bdb2acd77e6d5', '3');
+
+-- ----------------------------
+-- Table structure for sys_user
+-- ----------------------------
+DROP TABLE IF EXISTS `sys_user`;
+CREATE TABLE `sys_user` (
+  `id` varchar(32) NOT NULL COMMENT '主键',
+  `loginId` varchar(20) NOT NULL COMMENT '登录ID',
+  `userName` varchar(20) DEFAULT NULL COMMENT '姓名',
+  `password` varchar(50) DEFAULT NULL COMMENT '密码',
+  `area` varchar(5) DEFAULT NULL COMMENT '地区',
+  `department` varchar(60) DEFAULT NULL COMMENT '部门',
+  `useType` char(1) NOT NULL COMMENT '0=长期1=临时',
+  `startDate` char(10) DEFAULT NULL COMMENT '有效期开始',
+  `endDate` char(10) DEFAULT NULL COMMENT '有效期截止',
+  `operationTime` char(19) DEFAULT NULL COMMENT '操作时间',
+  `updateTime` char(19) DEFAULT NULL COMMENT '修改时间',
+  `status` char(1) NOT NULL COMMENT '0=禁用1=启用',
+  `roleId` char(32) DEFAULT NULL COMMENT '角色ID',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `userid` (`loginId`)
+) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+
+-- ----------------------------
+-- Records of sys_user
+-- ----------------------------
+INSERT INTO `sys_user` VALUES ('505460a6a3b9462ba8bea20adeab3bb8', 'ocean', '管理员', 'e55fba6f446d32c7cf82875546b11b13', null, '技术部门', '0', '2017-04-26', '2095-12-28', null, '2017-11-18 19:24:29', '1', '76c5922be3324230aba944b22b2ce454');

@@ -42,6 +42,7 @@ public class GloBalInterceptor implements Interceptor {
 		//小程序接口
 		notFilterActionKey.put("/fushu", 1);
 		notFilterActionKey.put("/fushu/searchGoods", 1);
+//		notFilterActionKey.put("/user/search", 1);
 
 		contentMap.put("login", "登录");
 		contentMap.put("/user/delete", "删除用户");
