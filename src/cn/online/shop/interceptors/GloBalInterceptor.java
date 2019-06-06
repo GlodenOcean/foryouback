@@ -40,8 +40,8 @@ public class GloBalInterceptor implements Interceptor {
 		notFilterActionKey.put("/loginDialog", 1);
 		notFilterActionKey.put("/getCaptchaCode", 1);
 		//小程序接口
-		notFilterActionKey.put("/goods", 1);
-		notFilterActionKey.put("/goods/searchMerchGoodsList", 1);
+		notFilterActionKey.put("/fushu", 1);
+		notFilterActionKey.put("/fushu/searchGoods", 1);
 
 		contentMap.put("login", "登录");
 		contentMap.put("/user/delete", "删除用户");

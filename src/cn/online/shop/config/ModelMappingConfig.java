@@ -2,6 +2,7 @@ package cn.online.shop.config;
 
 import cn.online.shop.web.model.*;
 import com.jfinal.plugin.activerecord.ActiveRecordPlugin;
+import main.model.Member;
 
 /**
  * 实体映射
@@ -39,7 +40,16 @@ public class ModelMappingConfig {
 //		arp.addMapping("shop_order", "OrderNo", Order.class);
 
 		// 商品表
-		arp.addMapping("shop_goods", "id", Goods.class);
+		arp.addMapping("shop_goods",  Goods.class);
+
+		// 商品表
+		arp.addMapping("shop_member",  Member.class);
+
+		// 商品表
+		arp.addMapping("shop_merch",  Merch.class);
+
+		// 商品表
+		arp.addMapping("shop_order",  Order.class);
 
 	}
 

@@ -25,14 +25,14 @@
     </style>
      <script type="text/javascript">
         //用户点击跳转地址（非静默授权） 参数appid为公众号的id redirect_uri为微信回调接口 state为可携带的参数
-        window.location.href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxafece9f54b788518&redirect_uri=http://online.icloudful.com/nocard/public/createOrderView&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect";
+        window.location.href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxafece9f54b788518&redirect_uri=http://online.icloudful.com/shop/public/createOrderView&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect";
 
   </script>
 </head>
 <body>
 <!-- <div class="login_bg">
     <div id="logo">
-        <img src="/nocard/build/custom/images/wechat/logo.png" alt=""/>
+        <img src="/shop/build/custom/images/wechat/logo.png" alt=""/>
     </div>
     <a class="login_btn" href="createOrderView">下单</a>
 </div> -->

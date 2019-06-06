@@ -44,6 +44,9 @@ public class RouteConfig extends Routes {
 		// 发送短信验证码
 		super.add("/goods", GoodsController.class, "/");
 
+		// 富叔粮油公众号接口
+		super.add("/fushu", WeChatFuShuController.class, "/");
+
 
 	}
 
