@@ -58,11 +58,11 @@ public abstract class BaseOrder<M extends BaseOrder<M>> extends Model<M> impleme
 	}
 
 	public void setMerchNo(String merchNo) {
-		set("merch_no", merchNo);
+		set("merchNo", merchNo);
 	}
 
 	public String getMerchNo() {
-		return get("merch_no");
+		return get("merchNo");
 	}
 
 	public void setMerchName(String merchName) {

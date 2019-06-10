@@ -1,11 +1,15 @@
 package cn.online.shop.web.controller;
 
 import cn.es.common.ESController;
+import cn.online.shop.web.model.Goods;
+import com.jfinal.plugin.activerecord.Page;
+
+import java.util.List;
 
 
 /**
  * 用户控制器
- * @author 钟展峰  2015年8月4日
+ * @author ocean  2019年6月6日
  */
 public class GoodsController extends ESController{
 
@@ -13,7 +17,7 @@ public class GoodsController extends ESController{
 	 * 分页查询
 	 */
 	public void searchMerchGoodsList(){
-//		List<Goods> merchGoodsList = Goods.dao.searchMerchGoodsList(super.getSearchCondition());
+//		Page<Goods> merchGoodsList = Goods.dao.searchMerchGoodsList(super.getSearchCondition());
 //		renderSuccessJson(merchGoodsList);
 	}
 

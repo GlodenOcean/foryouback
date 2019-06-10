@@ -17,10 +17,11 @@ import cn.online.shop.web.model.User;
 
 /**
  * 角色控制器
- * @author 钟展峰 
- * by 2015年8月4日
+ * @author ocean
+ * by 2019年6月6日
  */
 public class RoleController extends ESController{
+
 
 	/**
 	 * 查询

@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * SQL语句, 可以进行SQL语句拼装和参数拼装,提供一些便利操作,免去再手动拼SQL的错误
- * 2015年8月4日
+ * 2019年6月6日
  */
 public class HCSqlHelper {
 	

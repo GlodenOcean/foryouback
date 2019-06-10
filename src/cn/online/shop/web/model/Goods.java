@@ -16,7 +16,7 @@ public class Goods extends BaseGoods<Goods> {
 	 * @param sc
 	 * @return
 	 */
-	public Page<Goods> search(ESSearchCondition sc){
+	public Page<Goods> searchMerchGoodsList(ESSearchCondition sc){
 		int pageNumber = sc.page.getIndex();
 		int pageSize = sc.page.getSize();
 

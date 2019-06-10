@@ -24,7 +24,7 @@ import cn.online.shop.web.model.User;
 /**
  * 全局拦截器,主要记录操作日志,登录超时验证
  * 
- * @author 钟展峰
+ * @author ocean
  *
  *         2015年8月25日
  */
@@ -42,7 +42,7 @@ public class GloBalInterceptor implements Interceptor {
 		//小程序接口
 		notFilterActionKey.put("/fushu", 1);
 		notFilterActionKey.put("/fushu/searchGoods", 1);
-//		notFilterActionKey.put("/user/search", 1);
+		notFilterActionKey.put("/fushu/createOrder", 1);
 
 		contentMap.put("login", "登录");
 		contentMap.put("/user/delete", "删除用户");

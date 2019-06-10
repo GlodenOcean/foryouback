@@ -11,7 +11,7 @@ import cn.online.shop.web.model.Source;
 
 /**
  * 系统资源控制器
- * @author 钟展峰
+ * @author ocean
  *
  * 2016年4月8日
  */

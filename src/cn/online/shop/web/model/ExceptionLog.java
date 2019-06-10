@@ -10,7 +10,7 @@ import cn.online.shop.web.model.base.BaseExceptionLog;
 
 /**
  * 异常日志类
- * @author 钟展峰
+ * @author ocean
  *
  * 2016年1月8日
  */

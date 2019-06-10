@@ -2,7 +2,7 @@ package cn.online.shop.web.vo;
 
 /**
  * lua参数化脚本解析后保存对象
- * @author 钟展峰
+ * @author ocean
  *
  * 2016年4月7日
  */

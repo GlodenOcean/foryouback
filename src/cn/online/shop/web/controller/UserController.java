@@ -15,7 +15,7 @@ import cn.online.shop.web.model.User;
 
 /**
  * 用户控制器
- * @author 钟展峰  2015年8月4日
+ * @author ocean  2019年6月6日
  */
 public class UserController extends ESController{
 	
